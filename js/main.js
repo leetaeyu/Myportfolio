@@ -1,5 +1,11 @@
 $(function(){
     let wH = window.innerHeight;
+    //플러그인
+    (async () => {
+        await loadFull(tsParticles);
+        await tsParticles.loadJSON("tsparticles", "../particles/particlesjs-config.json");
+    })();
+
 
     $(document).scroll(function(){
         scTop = $(this).scrollTop();
@@ -30,9 +36,10 @@ $(function(){
     setTimeout(function() {
         $(".typing_txt2").addClass("fade_opacity");
         $(".name1").addClass("fade_in");
-    }, 1000);
+        $(".portfolio").addClass("fade_in");
+    }, 500);
     setTimeout(function() {
         $(".name2").addClass("fade_in");
         $(".name3").addClass("fade_in");
-    }, 1300);
+    }, 700);
 })

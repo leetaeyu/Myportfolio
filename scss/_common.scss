@@ -20,6 +20,10 @@ body {
                 margin-left: 2rem;
                 img {
                     width: 100%;
+                    &:hover {
+                        transform: rotate(100000deg);
+                        transition: 500s;
+                    }
                 }
             }
         }
@@ -32,6 +36,9 @@ body {
                     padding: 2rem 3.5rem;
                     font-size: 2.5rem;
                     color:#fff;
+                    &:hover {
+                        color:#00d67a;
+                    }
                 }
             }
         }

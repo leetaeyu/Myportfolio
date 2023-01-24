@@ -104,6 +104,12 @@ body {
 #pf_header .header_wrap .logo a img {
   width: 100%;
 }
+#pf_header .header_wrap .logo a img:hover {
+  -webkit-transform: rotate(100000deg);
+          transform: rotate(100000deg);
+  -webkit-transition: 500s;
+  transition: 500s;
+}
 #pf_header .header_wrap ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,6 +123,9 @@ body {
   padding: 2rem 3.5rem;
   font-size: 2.5rem;
   color: #fff;
+}
+#pf_header .header_wrap ul li a:hover {
+  color: #00d67a;
 }
 
 /* 애니메이션 */
@@ -165,7 +174,7 @@ body {
 }
 
 .fade_in {
-  opacity: 0.3;
+  opacity: 0.8;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -207,32 +216,38 @@ body {
 }
 #pf_main_container .home_container .home_wrap {
   position: relative;
-  max-width: 145rem;
+  max-width: 155rem;
   height: 100%;
   margin: 0 auto;
 }
 #pf_main_container .home_container .home_wrap .txtbox {
-  padding-top: 50rem;
-  font-size: 5rem;
-  font-family: "GothicA1", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-#pf_main_container .home_container .home_wrap .txtbox .typing_txt1 {
-  width: 28ch;
-  -webkit-animation: typing 0.8s steps(18), blink 0.5s step-end infinite alternate;
-          animation: typing 0.8s steps(18), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
+#pf_main_container .home_container .home_wrap .txtbox .name {
+  font-size: 35rem;
+  font-family: "MADE Soulmaze Outline";
+  font-weight: bold;
+  color: transparent;
+  line-height: 0.74;
+  -webkit-text-stroke: 0.2rem #00d67a;
 }
-#pf_main_container .home_container .home_wrap .txtbox .typing_txt2 {
-  width: 25ch;
-  -webkit-animation: typing 0.8s steps(15), blink 0.5s step-end infinite alternate;
-          animation: typing 0.8s steps(15), blink 0.5s step-end infinite alternate;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  white-space: nowrap;
-  overflow: hidden;
+#pf_main_container .home_container .home_wrap .txtbox .name .name2 {
+  margin-left: 5rem;
 }
-#pf_main_container .home_container .home_wrap .number {
+#pf_main_container .home_container .home_wrap .txtbox .portfolio {
+  font-size: 15rem;
+  font-family: "MADE Soulmaze Outline";
+  font-weight: bold;
+  color: transparent;
+  line-height: 0.65;
+  -webkit-text-stroke: 0.2rem #fff;
+}
+#pf_main_container .home_container .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,38 +258,20 @@ body {
   border-radius: 0.3rem;
   font-size: 1.8rem;
 }
-#pf_main_container .home_container .home_wrap .number li {
+#pf_main_container .home_container .number li {
   width: 20%;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;
 }
-#pf_main_container .home_container .home_wrap .number li.item1 {
+#pf_main_container .home_container .number li.item1 {
   background-color: #00d67a;
   -webkit-animation: blink-effect 2s step-end infinite;
           animation: blink-effect 2s step-end infinite;
   opacity: 1;
 }
-#pf_main_container .home_container .home_wrap .number li a {
+#pf_main_container .home_container .number li a {
   display: block;
   width: 100%;
   height: 100%;
-}
-#pf_main_container .home_container .home_wrap .name {
-  position: absolute;
-  top: 25%;
-  right: 0;
-  font-size: 35rem;
-  font-family: "MADE Soulmaze Outline";
-  font-weight: bold;
-  line-height: 0.65;
-  color: transparent;
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-text-stroke: 0.2rem #00d67a;
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
-}
-#pf_main_container .home_container .home_wrap .name .name2 {
-  margin-left: 5rem;
 }
