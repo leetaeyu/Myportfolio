@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/made-soulmaze");
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -80,6 +81,7 @@ body {
   position: relative;
   width: 100%;
   z-index: 1;
+  border-bottom: 0.1rem solid #666;
 }
 #pf_header .header_wrap {
   display: -webkit-box;
@@ -122,8 +124,8 @@ body {
   opacity: 0;
   -webkit-transform: translateY(20rem);
           transform: translateY(20rem);
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .ani_right {
@@ -156,14 +158,20 @@ body {
   transition: 0.7s;
 }
 
-.fade_in {
-  opacity: 1;
-  -webkit-transform: translate(0);
-          transform: translate(0);
+.ani_opacity {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.ani_opacity {
-  opacity: 0.2;
+.fade_in {
+  opacity: 0.3;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.fade_opacity {
+  opacity: 1;
 }
 
 @-webkit-keyframes blink-effect {
@@ -177,56 +185,96 @@ body {
     opacity: 0;
   }
 }
-#pf_main_container .home_container {
-  position: relative;
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink {
+  100% {
+    border-color: transparent;
+  }
+}
+@keyframes blink {
+  100% {
+    border-color: transparent;
+  }
 }
 #pf_main_container .home_container .home_wrap {
+  position: relative;
   max-width: 145rem;
+  height: 100%;
   margin: 0 auto;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-#pf_main_container .home_container .home_wrap .bg {
-  position: absolute;
-  top: 5rem;
-  left: 0;
-  width: 200%;
-  height: 20rem;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  z-index: -1;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+25,ff7c00+62,ff7f04+100 */
-  background: rgb(255, 183, 107); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, rgb(255, 183, 107) 0%, rgb(255, 167, 61) 25%, rgb(255, 124, 0) 62%, rgb(255, 127, 4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffb76b", endColorstr="#ff7f04",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 #pf_main_container .home_container .home_wrap .txtbox {
-  padding-top: 8rem;
-  font-size: 8rem;
+  padding-top: 50rem;
+  font-size: 5rem;
   font-family: "GothicA1", sans-serif;
+}
+#pf_main_container .home_container .home_wrap .txtbox .typing_txt1 {
+  width: 28ch;
+  -webkit-animation: typing 0.8s steps(18), blink 0.5s step-end infinite alternate;
+          animation: typing 0.8s steps(18), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#pf_main_container .home_container .home_wrap .txtbox .typing_txt2 {
+  width: 25ch;
+  -webkit-animation: typing 0.8s steps(15), blink 0.5s step-end infinite alternate;
+          animation: typing 0.8s steps(15), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  white-space: nowrap;
+  overflow: hidden;
 }
 #pf_main_container .home_container .home_wrap .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 15rem;
-  height: 2rem;
-  border: 0.1rem solid #fff;
+  gap: 1rem;
+  width: 9rem;
+  height: 1rem;
+  margin-top: 12rem;
   border-radius: 0.3rem;
-  margin-top: 30rem;
   font-size: 1.8rem;
 }
 #pf_main_container .home_container .home_wrap .number li {
   width: 20%;
+  border-radius: 50%;
   background-color: #fff;
+  opacity: 0.5;
 }
 #pf_main_container .home_container .home_wrap .number li.item1 {
-  background-color: rgb(255, 183, 107);
+  background-color: #00d67a;
   -webkit-animation: blink-effect 2s step-end infinite;
           animation: blink-effect 2s step-end infinite;
+  opacity: 1;
 }
 #pf_main_container .home_container .home_wrap .number li a {
   display: block;
   width: 100%;
   height: 100%;
+}
+#pf_main_container .home_container .home_wrap .name {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  font-size: 35rem;
+  font-family: "MADE Soulmaze Outline";
+  font-weight: bold;
+  line-height: 0.65;
+  color: transparent;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-text-stroke: 0.2rem #00d67a;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+#pf_main_container .home_container .home_wrap .name .name2 {
+  margin-left: 5rem;
 }

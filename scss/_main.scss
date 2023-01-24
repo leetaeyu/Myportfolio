@@ -2,7 +2,7 @@
 .ani_top {
   opacity: 0;
   transform: translateY(20rem);
-  transition: 0.7s;
+  transition: 2s;
 }
 .ani_right {
   opacity: 0;
@@ -23,12 +23,16 @@
   opacity: 0;
   transition: 0.7s;
 }
-.fade_in {
-  opacity: 1;
-  transform: translate(0);
-}
 .ani_opacity {
-  opacity: 0.2;
+  opacity: 0;
+  transition: 1s;
+}
+.fade_in {
+  opacity: 0.3;
+  transform: translateX(0);
+}
+.fade_opacity {
+  opacity: 1;
 }
 
 @keyframes blink-effect {
@@ -37,50 +41,62 @@
   }
 }
 
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  100% {
+    border-color: transparent
+  }
+}
+
 #pf_main_container {
   .home_container {
-    position: relative;
-    .home_wrap {
+      .home_wrap {
+        position: relative;
       max-width: 145rem;
+      height: 100%;
       margin: 0 auto;
-      transition: 2s;
-      .bg {
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        width: 200%;
-        height: 20rem;
-        transform: rotate(20deg);
-        z-index: -1;
-        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+25,ff7c00+62,ff7f04+100 */
-        background: rgb(255,183,107); /* Old browsers */
-        background: -moz-linear-gradient(-45deg,  rgba(255,183,107,1) 0%, rgba(255,167,61,1) 25%, rgba(255,124,0,1) 62%, rgba(255,127,4,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(-45deg,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 25%,rgba(255,124,0,1) 62%,rgba(255,127,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(135deg,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 25%,rgba(255,124,0,1) 62%,rgba(255,127,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-      }
-      .txtbox {
-        padding-top: 8rem;
-        font-size: 8rem;
+      .txtbox{
+        padding-top: 50rem;
+        font-size: 5rem;
         font-family: 'GothicA1', sans-serif;
-        .txt1 {}
-        .txt2 {}
+        .typing_txt1 {
+          width: 28ch;
+          animation: typing 0.8s steps(18), blink .5s step-end infinite alternate;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .typing_txt2 {
+          width: 25ch;
+          animation: typing 0.8s steps(15), blink .5s step-end infinite alternate;
+          animation-delay: 1s;
+          white-space: nowrap;
+          overflow: hidden;
+        }
       }
       .number {
         display: flex;
-        width: 15rem;
-        height: 2rem;
-        border: 0.1rem solid #fff;
+        gap: 1rem;
+        width: 9rem;
+        height: 1rem;
+        margin-top: 12rem;
         border-radius: 0.3rem;
-        margin-top: 30rem;
         font-size: 1.8rem;
         li {
           width: calc(100% / 5);
+          border-radius: 50%;
           background-color: #fff;
-          // cursor: pointer;
+          opacity: 0.5;
           &.item1 {
-            background-color: rgba(255,183,107,1);
+            background-color: #00d67a;
             animation: blink-effect 2s step-end infinite;
+            opacity: 1;
           }
           a {
             display: block;
@@ -88,14 +104,26 @@
             height: 100%;
           }
         }
-        // &::after {
-        //   content: '';
-        //   display: block;
-        //   width: 3rem;
-        //   height: 2rem;
-        //   background-color: #fff;
-        //   animation: blink-effect 2s step-end infinite;
-        // }
+      }
+      .name {
+        position: absolute;
+        top:25%;
+        right: 0;
+        font-size: 35rem;
+        font-family: 'MADE Soulmaze Outline';
+        font-weight: bold;
+        line-height: 0.65;
+        color: transparent;
+        transition: 2s;
+        -webkit-text-stroke: 0.2rem #00d67a;
+        transform: translateY(-25%);
+        .name1 {}
+        .name2 {
+            margin-left: 5rem;
+        }
+        .name3 {
+            // margin-left: 3rem;
+        }
       }
     }
   }

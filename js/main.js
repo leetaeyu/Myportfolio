@@ -15,16 +15,24 @@ $(function(){
 
     $("body").on({
         "mouseenter":function(){
-            $(".home_wrap").addClass("fade_in");
         },
         // "mouseleave":function(){
-        //     $(".home_wrap").removeClass("fade_in")
-        // }
-    })
-
-    $(function(){
-        $("#pf_main_container").fullpage({
-            navigation:false,
-        });
-    })
+            //     $(".home_wrap").removeClass("fade_in")
+            // }
+        })
+        
+        $(function(){
+            $("#pf_main_container").fullpage({
+                navigation:false,
+            });
+        })
+        
+    setTimeout(function() {
+        $(".typing_txt2").addClass("fade_opacity");
+        $(".name1").addClass("fade_in");
+    }, 1000);
+    setTimeout(function() {
+        $(".name2").addClass("fade_in");
+        $(".name3").addClass("fade_in");
+    }, 1300);
 })
