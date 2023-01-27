@@ -1,0 +1,533 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://webfontworld.github.io/gmarket/GmarketSans.css");
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+}
+
+a:focus, button:focus {
+  outline: 0;
+}
+
+address, i, em {
+  font-style: normal;
+}
+
+label, button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.blind {
+  position: absolute;
+  left: -9999em;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+:before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.skip a {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  /* height: ; 주고싶은만큼 */
+  line-height: 50px;
+  text-align: center;
+}
+
+.skip a:focus {
+  top: 0;
+}
+
+body {
+  font-family: "pretendard", sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #f2ece4;
+}
+
+main {
+  position: relative;
+  max-width: 140rem;
+  margin: 0 auto;
+  background-color: #b59777;
+  overflow: hidden;
+}
+
+.banner_container .banner_wrap .title {
+  text-align: center;
+}
+.banner_container .banner_wrap .title h1 {
+  display: inline-block;
+  padding-top: 5rem;
+  font-size: 5rem;
+  border-bottom: 0.3rem solid #fff;
+}
+.banner_container .banner_wrap .title span {
+  display: block;
+  padding: 1rem 0;
+  font-size: 2.5rem;
+}
+.banner_container .banner_wrap .bannerbox {
+  position: relative;
+  width: 100%;
+  padding-top: 75rem;
+}
+.banner_container .banner_wrap .bannerbox > li {
+  position: absolute;
+}
+.banner_container .banner_wrap .bannerbox > li:nth-child(1) {
+  top: 5rem;
+  left: 50%;
+  width: 80rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.banner_container .banner_wrap .bannerbox > li:nth-child(2) {
+  bottom: 7rem;
+  right: 8rem;
+  width: 30rem;
+}
+.banner_container .banner_wrap .bannerbox > li:nth-child(3) {
+  bottom: 7rem;
+  right: 39rem;
+  width: 15rem;
+}
+.banner_container .banner_wrap .bannerbox > li img {
+  width: 100%;
+  height: 100%;
+}
+
+.concept_container {
+  padding: 10rem 0;
+  color: #000;
+  background-color: #fff;
+}
+.concept_container .concept_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.concept_container .concept_wrap .concept_txtbox {
+  line-height: 1.3;
+}
+.concept_container .concept_wrap .concept_txtbox > span {
+  display: block;
+  font-size: 3rem;
+}
+.concept_container .concept_wrap .concept_txtbox > h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #000;
+}
+.concept_container .concept_wrap .concept_txtbox > div {
+  padding-top: 5rem;
+  font-size: 2rem;
+}
+
+.grid_container {
+  padding: 10rem 0 0 0;
+}
+.grid_container .grid_wrap {
+  position: relative;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.grid_container .grid_wrap .grid_titlebox > span {
+  display: block;
+  font-size: 3rem;
+}
+.grid_container .grid_wrap .grid_titlebox > h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #fff;
+}
+.grid_container .grid_wrap .grid_box {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+}
+.grid_container .grid_wrap .grid_box > li {
+  font-size: 2.5rem;
+}
+.grid_container .grid_wrap .grid_img {
+  position: absolute;
+  top: 45rem;
+  left: 0;
+  width: 60%;
+}
+.grid_container .grid_wrap .grid_img img {
+  width: 100%;
+}
+.grid_container .grid_wrap .grid_bigimg {
+  width: 110%;
+  -webkit-transform: translate(70%, -20%) rotate(-29deg);
+          transform: translate(70%, -20%) rotate(-29deg);
+}
+.grid_container .grid_wrap .grid_bigimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.typography_container {
+  position: absolute;
+  top: 240rem;
+  left: 0;
+  width: 100%;
+  padding: 10rem 0;
+  color: #000;
+  background-color: #fff;
+}
+.typography_container .typography_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.typography_container .typography_wrap .typography_titlebox span {
+  display: block;
+  font-size: 3rem;
+}
+.typography_container .typography_wrap .typography_titlebox h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #000;
+}
+.typography_container .typography_wrap .font-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.5rem;
+}
+.typography_container .typography_wrap .font-flexbox .notosanskr_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+  font-family: "Noto Sans KR";
+}
+.typography_container .typography_wrap .font-flexbox .notosanskr_box > div {
+  font-size: 1.8rem;
+}
+.typography_container .typography_wrap .font-flexbox .notosanskr_box > ul {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.typography_container .typography_wrap .font-flexbox .pretendard_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+  font-family: "pretendard";
+}
+.typography_container .typography_wrap .font-flexbox .pretendard_box > div {
+  font-size: 1.8rem;
+}
+.typography_container .typography_wrap .font-flexbox .pretendard_box > ul {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.typography_container .typography_wrap .gmarketsans_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding-top: 5rem;
+  font-family: "GmarketSans";
+}
+.typography_container .typography_wrap .gmarketsans_box > div {
+  font-size: 1.8rem;
+}
+.typography_container .typography_wrap .gmarketsans_box > ul {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.color_container {
+  padding: 0 0 10rem 0;
+  color: #fff;
+}
+.color_container .color_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.color_container .color_wrap .color_titlebox span {
+  display: block;
+  font-size: 3rem;
+}
+.color_container .color_wrap .color_titlebox h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #fff;
+}
+.color_container .color_wrap .color_item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+.color_container .color_wrap .color_item1 .shadow {
+  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem #666;
+          box-shadow: 0.3rem 0.3rem 0.5rem #666;
+}
+.color_container .color_wrap .color_item1 .bgbox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: #665c52;
+}
+.color_container .color_wrap .color_item1 .bgbox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_item1 .fgbox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: #c2ae98;
+}
+.color_container .color_wrap .color_item1 .fgbox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+.color_container .color_wrap .color_item2 .shadow {
+  -webkit-box-shadow: 0.3rem 0.3rem 0.5rem #666;
+          box-shadow: 0.3rem 0.3rem 0.5rem #666;
+}
+.color_container .color_wrap .color_item2 .redbox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: #e10000;
+}
+.color_container .color_wrap .color_item2 .redbox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_item2 .yellowbox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: #fabc00;
+}
+.color_container .color_wrap .color_item2 .yellowbox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_item2 .bluebox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: #003b99;
+}
+.color_container .color_wrap .color_item2 .bluebox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_txt {
+  padding-top: 5rem;
+  font-size: 1.9rem;
+}
+
+.main_container {
+  padding: 10rem 0;
+  color: #000;
+  background-color: #fff;
+}
+.main_container .main_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.main_container .main_wrap .main_titlebox span {
+  display: block;
+  font-size: 3rem;
+}
+.main_container .main_wrap .main_titlebox h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #000;
+}
+.main_container .main_wrap .main_titlebox > div {
+  padding: 5rem 0 2rem 0;
+  font-size: 3rem;
+}
+
+.main_img_wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0 10rem 0;
+}
+.main_img_wrap .main_img {
+  width: 100%;
+}
+.main_img_wrap .main_img img {
+  width: 100%;
+}
+
+.sub_container {
+  padding: 10rem 0;
+  color: #000;
+  background-color: #fff;
+}
+.sub_container .sub_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.sub_container .sub_wrap .sub_titlebox span {
+  display: block;
+  font-size: 3rem;
+}
+.sub_container .sub_wrap .sub_titlebox h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #000;
+}
+.sub_container .sub_wrap .sub_titlebox > div {
+  padding: 5rem 0 2rem 0;
+  font-size: 3rem;
+}
+
+.sub_img_wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0 10rem 0;
+}
+.sub_img_wrap .sub_title1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.sub_img_wrap .sub_img1 {
+  padding-top: 3rem;
+  width: 100%;
+}
+.sub_img_wrap .sub_img1 img {
+  width: 100%;
+}
+.sub_img_wrap .sub_title2 {
+  display: inline-block;
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.sub_img_wrap .sub_img2 {
+  padding-top: 3rem;
+  width: 100%;
+}
+.sub_img_wrap .sub_img2 img {
+  width: 100%;
+}
+
+.sub_board_container {
+  padding: 10rem 0;
+  color: #000;
+  background-color: #fff;
+}
+.sub_board_container .sub_board_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.sub_board_container .sub_board_wrap .sub_board_titlebox span {
+  display: block;
+  font-size: 3rem;
+}
+.sub_board_container .sub_board_wrap .sub_board_titlebox h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #000;
+}
+.sub_board_container .sub_board_wrap .sub_board_titlebox > div {
+  padding: 5rem 0 2rem 0;
+  font-size: 3rem;
+}
+
+.sub_board_img_wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0 10rem 0;
+}
+.sub_board_img_wrap .sub_board_title1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.sub_board_img_wrap .sub_board_img1 {
+  padding-top: 3rem;
+  width: 100%;
+}
+.sub_board_img_wrap .sub_board_img1 img {
+  width: 100%;
+}
+.sub_board_img_wrap .sub_board_title2 {
+  display: inline-block;
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.sub_board_img_wrap .sub_board_img2 {
+  padding-top: 3rem;
+  width: 100%;
+}
+.sub_board_img_wrap .sub_board_img2 img {
+  width: 100%;
+}

@@ -247,7 +247,10 @@ body {
   line-height: 0.65;
   -webkit-text-stroke: 0.2rem #fff;
 }
-#pf_main_container .home_container .number {
+#pf_main_container .home_container .home_wrap .number {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,22 +258,22 @@ body {
   width: 9rem;
   height: 1rem;
   margin-top: 12rem;
-  border-radius: 0.3rem;
   font-size: 1.8rem;
+  border-radius: 0.3rem;
 }
-#pf_main_container .home_container .number li {
+#pf_main_container .home_container .home_wrap .number li {
   width: 20%;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;
 }
-#pf_main_container .home_container .number li.item1 {
+#pf_main_container .home_container .home_wrap .number li.item1 {
   background-color: #00d67a;
   -webkit-animation: blink-effect 2s step-end infinite;
           animation: blink-effect 2s step-end infinite;
   opacity: 1;
 }
-#pf_main_container .home_container .number li a {
+#pf_main_container .home_container .home_wrap .number li a {
   display: block;
   width: 100%;
   height: 100%;

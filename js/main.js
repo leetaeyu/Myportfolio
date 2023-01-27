@@ -3,9 +3,8 @@ $(function(){
     //플러그인
     (async () => {
         await loadFull(tsParticles);
-        await tsParticles.loadJSON("tsparticles", "../particles/particlesjs-config.json");
+        await tsParticles.loadJSON("tsparticles", "../particles/particles.json");
     })();
-
 
     $(document).scroll(function(){
         scTop = $(this).scrollTop();
