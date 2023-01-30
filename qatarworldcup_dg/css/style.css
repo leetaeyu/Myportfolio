@@ -204,8 +204,8 @@ main {
 }
 .grid_container .grid_wrap .grid_bigimg {
   width: 110%;
-  -webkit-transform: translate(70%, -22.6%) rotate(-29deg);
-          transform: translate(70%, -22.6%) rotate(-29deg);
+  -webkit-transform: translate(80%, -23%) rotate(-38deg);
+          transform: translate(80%, -23%) rotate(-38deg);
 }
 .grid_container .grid_wrap .grid_bigimg img {
   width: 100%;
@@ -270,8 +270,9 @@ main {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
 }
+
 .color_container {
-  margin-top: -10rem;
+  margin-top: -35rem;
   padding: 0 0 10rem 0;
   color: #fff;
 }

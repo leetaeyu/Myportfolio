@@ -6,41 +6,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/main.js"></script>
-    <title>이태유 포트폴리오</title>
+    <title>LEE TAE YU</title>
 </head>
 <body>
-    <header id="pf_header">
-        <div class="header_wrap">
-            <h1 class="logo"><a href="#"><img src="images/logo_w.png" alt="로고"></a></h1>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#n">ABOUT ME</a></li>
-                <li><a href="#n">SKILLS</a></li>
-                <li><a href="#n">PORTFOLIO</a></li>
-                <li><a href="#n">CONTACT</a></li>
-            </ul>
+    <div class="box">
+        <div class="hi">안녕하세요<br>방문해주셔서 감사합니다 :)</div>
+    </div>
+    <header id="portfolio_hd">
+        <div class="hd_container">
+            <div class="hd_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo_w.png" alt="이태유 로고"></a></h1>
+                <button class="gnb_button gnb_open">
+                    <span class="blind">모바일 메뉴 펼침 버튼</span>
+                    <span class="line line1">선</span>
+                    <span class="line line2">선</span>
+                    <span class="line line3">선</span>
+                </button>
+                <div class="map">
+                    <h1 class="logo"><a href="#"><img src="images/logo_w.png" alt="이태유 로고"></a></h1>
+                    <button class="gnb_button gnb_close">
+                        <span class="blind">모바일 메뉴 닫힘 버튼</span>
+                        <span class="line line1">선</span>
+                        <span class="line line2">선</span>
+                        <span class="line line3">선</span>
+                    </button>
+                    <div class="depth1">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="http://donggap.com/warmpeople/" target="_blank">WarmPeople</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="http://donggap.com/qatarworldcup/index.html" target="_blank">QatarWorldcup</a></li>
+                            <li><a href="http://donggap.com/firestation/" target="_blank">FireStation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main id="pf_main_container">
-        <section id="home" class="section home_container">
+        <section class="section home_container">
+            <h3 class="blind">자기소개</h3>
+            <div id="particles-js"></div>
             <div class="home_wrap">
-
+                <div class="visionbox">
+                    <h3>Vision</h3>
+                    <div class="visionflexbox">
+                        <div class="vision">겸손하며 기술에 자만하지 않고 부족한 기량을 채워 나가며 변화를 두려워 하지 않는 직원이 되겠습니다!</div>
+                        <div class="imgbox"><img src="images/my_cat.png" alt="노트북하는 고양이"></div>
+                    </div>
+                </div>
+                <div class="duction">
+                    <h3>Introduction</h3>
+                    <div class="duction_box">
+                        <div class="duction_item duction_item1">
+                            <ul>
+                                <li>Name</li>
+                                <li>이태유</li>
+                            </ul>
+                            <ul>
+                                <li>Birthday</li>
+                                <li>1994.12.21</li>
+                            </ul>
+                            <ul>
+                                <li>Education</li>
+                                <li>둔촌고등학교 졸업<br>한양사이버대학교 컴퓨터공학과 재학</li>
+                            </ul>
+                            <ul>
+                                <li>Career</li>
+                                <li>UI/UX기반 웹퍼블리싱&프론트앤드 수료</li>
+                            </ul>
+                        </div>
+                        <div class="duction_item duction_item2">
+                            <ul>
+                                <li>Phone</li>
+                                <li>010 - 3379 - 2710</li>
+                            </ul>
+                            <ul>
+                                <li>E-mail</li>
+                                <li>ehdrkq2005@naver.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_box">
+                    <h3>Skills</h3>
+                    <div class="swiper skill_swiper">
+                        <div class="swiper-wrapper skill_box">
+                            <div class="swiper-slide skill_img"><img src="images/HTML-logo.svg" alt="HTML"></div>
+                            <div class="swiper-slide skill_img"><img src="images/CSS-logo.svg" alt="CSS3"></div>
+                            <div class="swiper-slide skill_img"><img src="images/JS-logo.svg" alt="javascript"></div>
+                            <div class="swiper-slide skill_img"><img src="images/SASS-logo.svg" alt="SCSS"></div>
+                            <div class="swiper-slide skill_img"><img src="images/jQuery-logo.svg" alt="jquery"></div>
+                            <div class="swiper-slide skill_img"><img src="images/PS-logo.svg" alt="photoshop"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="about" class="section about_container">
-            <h2 class="blind">about</h2>
-        </section>
-        <section id="skills" class="section skils_container">
-            <h2 class="blind">skills</h2>
-        </section>
-        <section id="portfolio" class="section portfolio_container">
-            <h2 class="blind">portfolio</h2>
-        </section>
-        <section id="contact" class="section contact_container">
-            <h2 class="blind">contact</h2>
+        <section class="section portfolio_container">
+            <h3 class="blind">portfolio</h3>
+                <div class="swiper banner_swiper">
+                    <div class="swiper-wrapper banner_box">
+                        <div class="swiper-slide banner_img1">
+                        <div class="animated-title">
+                            <div class="track">
+                                <div class="content">If you change your sleep, Life expectancy changes If you change your sleep, Life expectancy changes</div>
+                            </div>
+                        </div>
+                        <div class="slidebox">
+                            <div class="leftbox">
+                                <div class="txt">Warm People</div>
+                                <div class="link link_1"><a href="https://ddasa.com/">Original Site <span class="right right_1">→</span> </a></div>
+                                <div class="link link_2"><a href="http://donggap.com/warmpeople/">Renewal Site <span class="right right_2">→</span> </a></div>
+                                <div class="link link_7"><a href="http://donggap.com/warmpeople_dg/warmpeople_dg.html">Design Guide <span class="right right_7">→</span> </a></div>
+                                <div class="link link_3"><a href="http://donggap.com/warmpeople/sub.html">Sub_1 <span class="right right_3">→</span> </a></div>
+                                <div class="link link_4"><a href="http://donggap.com/warmpeople/map.html">Sub_2 <span class="right right_4">→</span> </a></div>
+                                <div class="link link_5"><a href="http://donggap.com/g5/bbs/board.php?bo_table=free">Sub_3 Gnuboard <span class="right right_5">→</span> </a></div>
+                                <div class="link link_6"><a href="http://donggap.com/g5/bbs/board.php?bo_table=warm_view_star">Sub_4 Gnuboard <span class="right right_6">→</span> </a></div>
+                            </div>
+                            <div class="centerbox"><img src="images/warm.png" alt="따뜻한사람들 메인사진"></div>
+                            <div class="rightbox">
+                                <h4>따뜻한사람들</h4>
+                                <ul>
+                                    <li>TYPE <span>: PC, TABLE, MOBILE</span></li>
+                                    <li>TOOLS <span>: Html · Scss · Javascript · jQuery · Gnuboard</span></li>
+                                    <li>기여도 <span>: 개인작업100%</span></li>
+                                    <li>제작소요기간 <span>: 약 3주</span></li>
+                                    <li>CONCEPT <span>: 메인 페이지에서의 정보 전달이 미비한 홈페이지를 서브 페이지를 통하지 않고도 메인 페이지에서 정보 전달 증가에 중점을 두었고, 방문자가 쉽게 돌침대의 장점을 알 수 있게 하는 것, 예스러운 디자인을 벤치마킹을 통해 리뉴얼 하였습니다.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prev"></div>
+                        <div class="number">1 / 4</div>
+                        <div class="next"></div>
+                        </div>
+                        <div class="swiper-slide banner_img2">
+                            <div class="slidebox">
+                                <div class="leftbox">
+                                    <div class="txt">Qatar Worldcup</div>
+                                    <div class="link link_1"><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022">Original Site <span class="right right_1">→</span> </a></div>
+                                    <div class="link link_2"><a href="http://donggap.com/qatarworldcup/index.html">Renewal Site <span class="right right_2">→</span> </a></div>
+                                    <div class="link link_7"><a href="http://donggap.com/qatarworldcup_dg/qatarworldcup_dg.html">Design Guide <span class="right right_7">→</span> </a></div>
+                                    <div class="link link_3"><a href="http://donggap.com/qatarworldcup/sub.html">Sub_1 <span class="right right_3">→</span> </a></div>
+                                </div>
+                                <div class="centerbox"><img src="images/world.png" alt="따뜻한사람들 메인사진"></div>
+                                <div class="rightbox">
+                                    <h4>카타르월드컵</h4>
+                                    <ul>
+                                        <li>TYPE <span>: PC, TABLE, MOBILE</span></li>
+                                        <li>TOOLS <span>: Html · Scss · Javascript · jQuery</span></li>
+                                        <li>기여도 <span>: 개인작업100%</span></li>
+                                        <li>제작소요기간 <span>: 약 2주</span></li>
+                                        <li>CONCEPT <span>: 카타르 월드컵의 시그니처 컬러와 현장감 있는 스틸컷 그리고 지난 월드컵의 화려한 순간들을 함께 담아보려 노력하였으며 방문자들이 쉽고 빠르게 원하는 정보를 얻을 수 있도록 레이아웃을 구성하였습니다.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="track">
+                                    <div class="content"><img src="images/world_ro.png" alt="회전하는 텍스트"></div>
+                                </div>
+                            </div>
+                            <div class="prev"></div>
+                            <div class="number">2 / 4</div>
+                            <div class="next"></div>
+                        </div>
+                        <div class="swiper-slide banner_img3">
+                            <div class="animated-title">
+                                <div class="track">
+                                    <div class="content">The safety of ten million citizens I will become a citizen watchman The safety of ten million citizens I will become a citizen watchman</div>
+                                </div>
+                            </div>
+                            <div class="slidebox">
+                                <div class="leftbox">
+                                    <div class="txt">Fire Station</div>
+                                    <div class="link link_1"><a href="https://fire.seoul.go.kr/kangdong/main/main.do">Original Site <span class="right right_1">→</span> </a></div>
+                                    <div class="link link_2"><a href="http://donggap.com/firestation/">Renewal Site <span class="right right_2">→</span> </a></div>
+                                    <div class="link link_7"><a href="http://donggap.com/firestation_dg/firestation_dg.html">Design Guide <span class="right right_7">→</span> </a></div>
+                                    <div class="link link_3"><a href="http://donggap.com/firestation/sub.html">Sub_1 <span class="right right_3">→</span> </a></div>
+                                </div>
+                                <div class="centerbox"><img src="images/fire2.png" alt="따뜻한사람들 메인사진"></div>
+                                <div class="rightbox">
+                                    <h4>강동소방서</h4>
+                                    <ul>
+                                        <li>TYPE <span>: PC, TABLE, MOBILE</span></li>
+                                        <li>TOOLS <span>: Html · Scss · Javascript · jQuery</span></li>
+                                        <li>기여도 <span>: 개인작업100%</span></li>
+                                        <li>제작소요기간 <span>: 약 10일</span></li>
+                                        <li>CONCEPT <span>: 딱딱했던 홈페이지를 강렬하지만 부드럽고, 작게 나열되어있던 정보들을 크게 펼쳐 정보 전달 증가에 중점을 두었습니다.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="prev"></div>
+                            <div class="number">3 / 4</div>
+                            <div class="next"></div>
+                        </div>
+                        <div class="swiper-slide banner_img4">
+                        </div>
+                    </div>
+                </div>
+
         </section>
     </main>
 </body>

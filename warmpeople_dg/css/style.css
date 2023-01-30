@@ -204,8 +204,8 @@ main {
 }
 .grid_container .grid_wrap .grid_bigimg {
   width: 110%;
-  -webkit-transform: translate(70%, -20%) rotate(-29deg);
-          transform: translate(70%, -20%) rotate(-29deg);
+  -webkit-transform: translate(75%, -22%) rotate(-29deg);
+          transform: translate(75%, -22%) rotate(-29deg);
 }
 .grid_container .grid_wrap .grid_bigimg img {
   width: 100%;
@@ -286,6 +286,7 @@ main {
   letter-spacing: 0.1rem;
 }
 .color_container {
+  margin-top: -25rem;
   padding: 0 0 10rem 0;
   color: #fff;
 }
@@ -333,6 +334,31 @@ main {
   background-color: #c2ae98;
 }
 .color_container .color_wrap .color_item1 .fgbox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_item1 .whbox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  color: #000;
+  background-color: #fff;
+}
+.color_container .color_wrap .color_item1 .whbox > ul {
+  position: absolute;
+  top: 3rem;
+  left: 5rem;
+}
+.color_container .color_wrap .color_item1 .bkbox {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background-color: #000;
+}
+.color_container .color_wrap .color_item1 .bkbox > ul {
   position: absolute;
   top: 3rem;
   left: 5rem;

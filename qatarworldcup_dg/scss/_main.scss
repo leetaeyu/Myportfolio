@@ -103,7 +103,7 @@ main {
         }
         .grid_bigimg {
             width: 110%;
-            transform: translate(70%, -22.6%) rotate(-29deg);
+            transform: translate(80%, -23%) rotate(-38deg);
             img {
                 width: 100%;
                 height: 100%;
@@ -150,16 +150,14 @@ main {
                 >ul {
                     font-size: 1.5rem;
                     letter-spacing: 0.1rem;
-                    >li {}
                 }
             }
             
         }
     }
 }
-
 .color_container {
-    margin-top: -10rem;
+    margin-top: -35rem;
     padding: 0 0 10rem 0;
     color: $wh;
     .color_wrap {

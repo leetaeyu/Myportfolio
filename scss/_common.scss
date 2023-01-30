@@ -1,43 +1,113 @@
 body {
     color:#fff;
     background-color: #000;
+    &.hidden {overflow: hidden;}
 }
-#pf_header {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    border-bottom: 0.1rem solid #666;
-    .header_wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width:99.5%;
-        margin: 0 auto;
-        .logo {
-            a {
-                display: block;
+#portfolio_hd {
+    .hd_container {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        .hd_wrap {
+            height: 6rem;
+            h1 {
                 width: 5rem;
-                margin-left: 2rem;
-                img {
+                padding: 1rem;
+                a {
+                    img {
                     width: 100%;
-                    &:hover {
-                        transform: rotate(100000deg);
-                        transition: 500s;
                     }
                 }
             }
-        }
-        ul {
-            display: flex;
-            li {
-                position: relative;
-                a {
-                    display: block;
-                    padding: 2rem 3.5rem;
-                    font-size: 2.5rem;
-                    color:#fff;
-                    &:hover {
-                        color:#00d67a;
+            .gnb_open {
+                // display: none;
+                position: absolute;
+                right: 2rem;
+                top: 50%;
+                width: 4rem;
+                height: 4rem;
+                transform: translateY(-50%);
+                .line {
+                    position: absolute;
+                    left: 1rem;
+                    top: 50%;
+                    width: 2.5rem;
+                    height: 0.2rem;
+                    border-radius: 0.1rem;
+                    background-color: #fff;
+                    overflow: hidden;
+                    text-indent: -9999rem;
+                    transition: 0.3s;
+                }
+                .line1 {
+                    transform: translateY(-7px);
+                }
+                .line3 {
+                    transform: translateY(7px);
+                }
+            }
+            .map {
+                position: fixed;
+                right: 200rem;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                overflow: auto;
+                transition: right 0.8s, opacity 1.5s;
+                background-color: #000;
+                z-index: 9999;
+                &.active {
+                    right:0;
+                    opacity: 1;
+                }
+                .gnb_close {
+                    position: absolute;
+                    right: 2rem;
+                    top: 0.9rem;
+                    width: 4rem;
+                    height: 4rem;
+                    .line {
+                        position: absolute;
+                        left: 1rem;
+                        top: 50%;
+                        width: 2rem;
+                        height: 0.2rem;
+                        border-radius: 0.1rem;
+                        background-color: #fff;
+                        overflow: hidden;
+                        text-indent: -9999rem;
+                        transition: 0.3s;
+                    }
+                    .line {
+                        background-color: #fff;
+                    }
+                    .line1 {
+                        transform: rotate(-45deg);
+                    }
+                    .line2 {
+                        opacity: 0;
+                    }
+                    .line3 {
+                        transform: rotate(45deg);
+                    }
+                }
+                .depth1 {
+                    padding: 10rem 0 0 10rem;
+                    >ul {
+                        display: flex;
+                        gap: 5rem;
+                        >li {
+                            >a {
+                                display: inline-block;
+                                font-size: 10rem;
+                                font-weight: 600;
+                                color:#fff;
+                                &:hover {text-decoration: line-through;}
+                            }
+                        }
                     }
                 }
             }
