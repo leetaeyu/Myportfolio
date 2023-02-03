@@ -27,12 +27,12 @@ $(function(){
     });
 
     var skillsSwiper = new Swiper(".skills_swiper", {
-        slidesPerView: 6,
+        slidesPerView: 5,
         speed:800,
         // centeredSlides: true,
         infinite:true,
-        loop:true,
         loopAdditionalSlides: 1,
+        loop:true,
         allowTouchMove: true,
         autoplay: {
             delay: 2000,
@@ -69,6 +69,7 @@ $(function(){
     $('.box').on('mouseout', function(){
         portfolioSwiper.autoplay.start();
     });
+
 
     $(".link_1 > a").mouseenter(function(){
         $(".right_1").addClass("enter");
@@ -113,10 +114,10 @@ $(function(){
         $(".right_7").removeClass("enter");
     });
     $(".link_8 > a").mouseenter(function(){
-        $(".right_7").addClass("enter");
+        $(".right_8").addClass("enter");
     });
     $(".link_8 > a").mouseleave(function(){
-        $(".right_7").removeClass("enter");
+        $(".right_8").removeClass("enter");
     });
 
     // const link = $('.banner_swiper .slidebox .link')
