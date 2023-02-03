@@ -1,0 +1,27 @@
+$wh:#fff;
+$bk:#000;
+$pa:10rem 0;
+
+
+@mixin max ($wid:60%, $ma:0 auto) {
+    max-width: $wid;
+    margin: $ma;
+}
+@mixin pan ($dis:block, $size:3rem) {
+    display: $dis;
+    font-size: $size;
+}
+@mixin hb ($inline:inline-block, $siz:4rem, $bor:0.3rem solid $bk) {
+    display: $inline;
+    font-size: $siz;
+    border-bottom: $bor;
+}
+@mixin hw ($inline:inline-block, $siz:4rem, $bor:0.3rem solid $wh) {
+    display: $inline;
+    font-size: $siz;
+    border-bottom: $bor;
+}
+@mixin txt ($paT:5rem, $si:2rem) {
+    padding-top: $paT;
+    font-size: $si;
+}

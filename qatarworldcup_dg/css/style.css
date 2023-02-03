@@ -459,3 +459,62 @@ main {
 .sub_img_wrap .sub_img1 img {
   width: 100%;
 }
+
+.ta_mo_container {
+  padding: 10rem 0;
+  color: #000;
+  background-color: #fff;
+}
+.ta_mo_container .ta_mo_wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.ta_mo_container .ta_mo_wrap .ta_mo_titlebox span {
+  display: block;
+  font-size: 3rem;
+}
+.ta_mo_container .ta_mo_wrap .ta_mo_titlebox h3 {
+  display: inline-block;
+  font-size: 4rem;
+  border-bottom: 0.3rem solid #000;
+}
+.ta_mo_container .ta_mo_wrap .ta_mo_titlebox > div {
+  padding: 5rem 0 2rem 0;
+  font-size: 3rem;
+}
+
+.ta_mo_img_wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5rem 0 10rem 0;
+}
+.ta_mo_img_wrap .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.ta_mo_img_wrap .flexbox .ta_mo_img1 {
+  padding-top: 3rem;
+  width: 50%;
+}
+.ta_mo_img_wrap .flexbox .ta_mo_img1 > div {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.ta_mo_img_wrap .flexbox .ta_mo_img1 img {
+  width: 100%;
+}
+.ta_mo_img_wrap .flexbox .ta_mo_img2 {
+  padding-top: 3rem;
+  width: 30%;
+}
+.ta_mo_img_wrap .flexbox .ta_mo_img2 > div {
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.ta_mo_img_wrap .flexbox .ta_mo_img2 img {
+  width: 100%;
+}

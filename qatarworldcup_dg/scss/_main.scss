@@ -330,3 +330,49 @@ main {
         }
     }
 }
+.ta_mo_container {
+    padding: $pa;
+    color: $bk;
+    background-color: $wh;
+    .ta_mo_wrap {
+        @include max();
+        .ta_mo_titlebox {
+            span {@include pan();}
+            h3 {@include hb();}
+            >div {padding: 5rem 0 2rem 0; font-size: 3rem;}
+        }
+    }
+}
+.ta_mo_img_wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0 10rem 0;
+    .flexbox {
+        display: flex;
+        gap:10%;
+        .ta_mo_img1 {
+            padding-top: 3rem;
+            width: 50%;
+            >div {
+                padding-bottom: 3rem;
+                font-size: 3rem;
+                text-align: center;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .ta_mo_img2 {
+            padding-top: 3rem;
+            width: 30%;
+            >div {
+                padding-bottom: 3rem;
+                font-size: 3rem;
+                text-align: center;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
