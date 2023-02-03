@@ -39,7 +39,7 @@ $(function(){
             disableOnInteraction: true,
         },
     });
-    var bannerSwiper = new Swiper(".banner_swiper", {
+    var portfolioSwiper = new Swiper(".portfolio_swiper", {
         slidesPerView: 1,
         speed:800,
         centeredSlides: true,
@@ -58,16 +58,16 @@ $(function(){
     });
 
     $('.home_container').on('mouseover', function(){
-        bannerSwiper.autoplay.stop();
+        portfolioSwiper.autoplay.stop();
     });
     $('.home_container').on('mouseout', function(){
-        bannerSwiper.autoplay.start();
+        portfolioSwiper.autoplay.start();
     });
     $('.box').on('mouseover', function(){
-        bannerSwiper.autoplay.stop();
+        portfolioSwiper.autoplay.stop();
     });
     $('.box').on('mouseout', function(){
-        bannerSwiper.autoplay.start();
+        portfolioSwiper.autoplay.start();
     });
 
     $(".link_1 > a").mouseenter(function(){
@@ -110,6 +110,12 @@ $(function(){
         $(".right_7").addClass("enter");
     });
     $(".link_7 > a").mouseleave(function(){
+        $(".right_7").removeClass("enter");
+    });
+    $(".link_8 > a").mouseenter(function(){
+        $(".right_7").addClass("enter");
+    });
+    $(".link_8 > a").mouseleave(function(){
         $(".right_7").removeClass("enter");
     });
 

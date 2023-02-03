@@ -199,11 +199,11 @@
 
     .portfolio_container {
         position: relative;
-        .banner_swiper {
+        .portfolio_swiper {
             width: 100%;
             height: 100vh;
-            .banner_box{
-                .banner_img1 {
+            .portfolio_box{
+                .portfolio_img1 {
                     position: relative;
                     background-color: #b59777;
                     .animated-title {
@@ -314,7 +314,7 @@
                         cursor: pointer;
                     }
                 }
-                .banner_img2 {
+                .portfolio_img2 {
                     position: relative;
                     background-color: #5c8b55;
                     .slidebox {
@@ -417,7 +417,7 @@
                         cursor: pointer;
                     }
                 }
-                .banner_img3 {
+                .portfolio_img3 {
                     position: relative;
                     background-color: #373f47;
                     .animated-title {
@@ -553,7 +553,7 @@
                         cursor: pointer;
                     }
                 }
-                .banner_img4 {
+                .portfolio_img4 {
                     position: relative;
                     width: 100%;
                     background-color: #3080ed;
