@@ -1,0 +1,1170 @@
+/* 모바일만 ~767px */
+@media screen and (max-width: 767px) {}
+
+/* 태블릿부터 768px~ */
+@media screen and (min-width: 768px) {
+    #pf_main_container {
+        .home_container {
+            .home_wrap {
+                .visionbox {
+                    display: block;
+                    padding-top: 5rem;
+                    h3 {
+                        position: relative;
+                        top:2rem;
+                    }
+                    .visionflexbox {
+                        justify-content: inherit;
+                        .imgbox {
+                            right: -1rem;
+                            width: 5rem;
+                            height: 6rem;
+                        }
+                    }
+                }
+                .duction {
+                    padding-top: 3rem;
+                    .duction_box {
+                        display: flex;
+                        gap:5rem;
+                        .duction_item {
+                            >ul {
+                                font-size: 2rem;
+                                .item1 {
+                                    width: 10rem;
+                                }
+                                .item2 {
+                                    font-size: 1.7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .skills_box {
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    .skills_swiper {
+                    }
+                    .mo_skill {
+                        display: flex;
+                        gap:2rem;
+                        .mo_skillbox2 {
+                            padding-top: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio_container {
+            .portfolio_swiper {
+                .portfolio_box{
+                    .portfolio_img2 {
+                        .slidebox {
+                            .leftbox {
+                                padding-bottom: 6rem;
+                            }
+                            .centerbox {
+                                width: inherit;
+                                .track {
+                                    .content {
+                                        width: 65rem;
+                                        height: 65rem;
+                                    }
+                                }
+                            }
+                            .rightbox {
+                                padding-top: 5rem;
+                                .right_list {
+                                    .flexbox {
+                                        padding-top: 2rem;
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 태블릿만 768px~1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+/* PC부터 1024px~ */
+@media screen and (min-width: 1024px) {
+    .box {
+        .wrap {
+            .titlebox {
+                .hi {
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+    #pf_main_container {
+        .home_container {
+            .home_wrap {
+                left: 50%;
+                transform: translateX(-50%);
+                .visionbox {
+                    h3 {
+                        position:inherit;
+                        top:inherit;
+                        font-size: 4rem;
+                    }
+                    .visionflexbox {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        .vision {
+                            font-size: 2rem;
+                        }
+                        .imgbox {
+                            right: 1rem;
+                            width: 10rem;
+                            height: 8rem;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .duction {
+                    padding-top: 5rem;
+                    h3 {
+                        font-size: 4rem;
+                    }
+                    .duction_box {
+                        gap:10rem;
+                        .duction_item {
+                            >ul {
+                                font-size: 2.5rem;
+                                .item1 {
+                                    width: 15rem;
+                                }
+                                .item2 {
+                                    font-size: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .skills_box {
+                    padding-top: 1.5rem;
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+                    .skills_swiper {
+                        display: block;
+                        padding-top: 5rem;
+                        .skill_box {
+                            .skill_img {
+                                width: 15rem;
+                                height: 15rem;
+                                img {width: 100%; height: 100%;}
+                            }
+                        }
+                    }
+                    .mo_skill {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .portfolio_container {
+            position: relative;
+            .portfolio_swiper {
+                width: 100%;
+                height: 100vh;
+                .portfolio_box{
+                    .portfolio_img1 {
+                        position: relative;
+                        background-color: #b59777;
+                        .animated-title {
+                            display: block;
+                            position: absolute;
+                            top:50%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                                .animated-title_mo {
+                                    display: none;
+                                    position: absolute;
+                                    top:50%;
+                                    left: 0;
+                                    width: 100%;
+                                    max-width:100%; 
+                                    height: auto; 
+                                    padding:0 0 11rem 0; 
+                                    font-size:3rem;
+                                    font-weight:600;
+                                    text-transform:uppercase;
+                                    overflow-x: hidden; 
+                                    overflow-y: hidden;
+                                    transform: translateY(-50%);
+                                    z-index: 1;
+                                    .track {
+                                        position: absolute; 
+                                        white-space: nowrap;
+                                        will-change: transform;
+                                        animation: marquee 11s linear infinite; 
+                                    }
+                                }
+                                @keyframes marquee {
+                                    from { transform: translateX(0); }
+                                    to { transform: translateX(-50%); }
+                                }
+                                @media (hover: hover) and (min-width: 70rem){
+                                    .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -9rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 12.7rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                    .portfolio_img2 {
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                padding-bottom: inherit;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                min-width: 35rem;
+                                .track {
+                                    .content {
+                                        width: 70rem;
+                                        height: 70rem;
+                                    } 
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                padding-top: inherit;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -9rem;
+                                    .txt {
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        flex-wrap: inherit;
+                                        column-gap: inherit;
+                                        .link {
+                                            a {
+                                                font-size: 1.7rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                        }
+                        .next {
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                        }
+                    }
+                    .portfolio_img3 {
+                        position: relative;
+                        background-color: #373f47;
+                        .animated-title {
+                            position: absolute;
+                            top:50%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -20rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                    .portfolio_img4 {
+                        position: relative;
+                        background-color: #3080ed;
+                        .animated-title {
+                            position: absolute;
+                            top:55%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-55%);
+                            z-index: -1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -20rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                    .portfolio_img5 {
+                        position: relative;
+                        background-color: #060606;
+                        .animated-title {
+                            position: absolute;
+                            top:55%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-55%);
+                            z-index: -1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -20rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 작은 PC 1024px~1279px */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+/* PC 1280px~ */
+@media screen and (min-width: 1280px) {
+    #pf_main_container {
+        .portfolio_container {
+            position: relative;
+            .portfolio_swiper {
+                width: 100%;
+                height: 100vh;
+                .portfolio_box{
+                    .portfolio_img3 {
+                        position: relative;
+                        background-color: #373f47;
+                        .animated-title {
+                            position: absolute;
+                            top:50%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-50%);
+                            z-index: 1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -2rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                    .portfolio_img4 {
+                        position: relative;
+                        background-color: #3080ed;
+                        .animated-title {
+                            position: absolute;
+                            top:55%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-55%);
+                            z-index: -1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: -8rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                    .portfolio_img5 {
+                        position: relative;
+                        background-color: #060606;
+                        .animated-title {
+                            position: absolute;
+                            top:55%;
+                            left: 0;
+                            width: 100%;
+                            max-width:100%; 
+                            height: auto; 
+                            padding:0 0 11rem 0; 
+                            font-size:8rem;
+                            font-weight:600;
+                            text-transform:uppercase;
+                            overflow-x: hidden; 
+                            overflow-y: hidden;
+                            transform: translateY(-55%);
+                            z-index: -1;
+                            .track {
+                                position: absolute; 
+                                white-space: nowrap;
+                                will-change: transform;
+                                animation: marquee 11s linear infinite; 
+                            }
+                        }
+                        @keyframes marquee {
+                            from { transform: translateX(0); }
+                            to { transform: translateX(-50%); }
+                        }
+                        @media (hover: hover) and (min-width: 70rem){
+                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                position: relative;
+                                width: 60%;
+                                max-width: 60%;
+                                min-width: 35rem;
+                                margin: 0 auto;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                .right_list {
+                                    position: absolute;
+                                    bottom: 0rem;
+                                    .txt {
+                                        display: inline-block;
+                                        font-size: 1.7rem;
+                                        border-bottom: 0.1rem solid #fff;
+                                    }
+                                    .flexbox {
+                                        display: inherit;
+                                        .link {
+                                            a {
+                                                display: block;
+                                                color:#fff;
+                                                font-size: 1.7rem;
+                                                .right {
+                                                    transition: 0.3s;
+                                                    &.enter {
+                                                        display: inline-block;
+                                                        transform: translateX(0.5rem);
+                                                        color: #fff;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .number {
+                            position: absolute;
+                            right: 7rem;
+                            bottom: 1.3rem;
+                            font-size: 3rem;
+                        }
+                        .prev {
+                            position: absolute;
+                            bottom: 2.2rem;
+                            right: 13rem;
+                            width: 2.3rem;
+                            height: 2.3rem;
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff;
+                            transform: rotate(225deg);
+                            cursor: pointer;
+                        }
+                        .next {
+                            position: absolute;
+                            bottom:2.2rem;
+                            right: 4.5rem;
+                            width: 2.3rem;
+                            height: 2.3rem; 
+                            border-top: 0.3rem solid #fff;
+                            border-right: 0.3rem solid #fff; 
+                            transform: rotate(45deg);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

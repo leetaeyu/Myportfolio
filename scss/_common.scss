@@ -95,14 +95,12 @@ body {
                     }
                 }
                 .depth1 {
-                    padding: 10rem 0 0 10rem;
+                    padding: 10rem 0 0 2rem;
                     >ul {
-                        display: flex;
-                        gap: 5rem;
                         >li {
                             >a {
                                 display: inline-block;
-                                font-size: 10rem;
+                                font-size: 4rem;
                                 font-weight: 600;
                                 color:#fff;
                                 &:hover {text-decoration: line-through;}

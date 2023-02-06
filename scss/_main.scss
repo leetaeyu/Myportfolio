@@ -92,6 +92,12 @@
                 100% {opacity: 1;}
                 }
             }
+            .hi {
+                font-size: 3.2rem;
+                font-weight: 600;
+                color:#000;
+                text-align: center;
+            }
             .leetaeyu {
                 width: 20rem;
                 height: 20rem;
@@ -105,12 +111,6 @@
                     height: 100%;
                 }
             }
-            .hi {
-                font-size: 8rem;
-                font-weight: 600;
-                color:#000;
-                text-align: center;
-            }
         }
     }
 }
@@ -120,18 +120,17 @@
         .home_wrap {
             position: absolute;
             top:0;
-            left: 50%;
+            left: 2rem;
             max-width: 130rem;
             min-width: 130rem;
             margin: 0 auto;
-            padding-top: 5rem;
             opacity: 0;
             transition: 1s;
-            transform: translateX(-50%);
             &.on {opacity: 1;}
             .visionbox {
+                display: none;
                 h3 {
-                    font-size: 4rem;
+                    font-size: 2rem;
                 }
                 .visionflexbox {
                     display: flex;
@@ -140,7 +139,7 @@
                     padding-bottom: 1rem;
                     border-bottom: 0.2rem solid #fff;
                     .vision {
-                        font-size: 2rem;
+                        font-size: 1.6rem;
                     }
                     .imgbox {
                         position: relative;
@@ -156,22 +155,25 @@
                 }
             }
             .duction {
-                padding-top: 5rem;
+                padding-top: 10rem;
                 h3 {
-                    font-size: 4rem;
+                    font-size: 2.5rem;
                 }
                 .duction_box {
-                    display: flex;
-                    gap:10rem;
+                    // display: flex;
+                    // gap:10rem;
                     padding-top: 2.5rem;
                     .duction_item {
                         >ul {
                             display: flex;
                             padding-top: 1rem;
-                            font-size: 2.5rem;
+                            font-size: 1.7rem;
                             &:nth-child(1) {padding: 0;}
                             .item1 {
-                                width: 15rem;
+                                width: 8.5rem;
+                            }
+                            .item2 {
+                                font-size: 1.6rem;
                             }
                         }
                     }
@@ -180,16 +182,41 @@
             .skills_box {
                 padding-top: 1.5rem;
                 h3 {
-                    font-size: 2.5rem;
+                    font-size: 1.7rem;
                     font-weight: 500;
                 }
                 .skills_swiper {
+                    display: none;
                     padding-top: 5rem;
                     .skill_box {
                         .skill_img {
                             width: 15rem;
                             height: 15rem;
                             img {width: 100%; height: 100%;}
+                        }
+                    }
+                }
+                .mo_skillbox1 {
+                    display: flex;
+                    gap:1.5rem;
+                    padding-top: 3rem;
+                    .mo_skill_img {
+                        width: 10rem;
+                        height: 10rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .mo_skillbox2 {
+                    display: flex;
+                    gap:1.5rem;
+                    padding-top: 2rem;
+                    .mo_skill_img {
+                        width: 10rem;
+                        height: 10rem;
+                        img {
+                            width: 100%;
                         }
                     }
                 }
@@ -206,78 +233,85 @@
                     position: relative;
                     background-color: #b59777;
                     .animated-title {
-                        position: absolute;
-                        top:52%;
-                        left: 0;
-                        width: 100%;
-                        max-width:100%; 
-                        height: auto; 
-                        padding:0 0 11rem 0; 
-                        font-size:8rem;
-                        font-weight:600;
-                        text-transform:uppercase;
-                        overflow-x: hidden; 
-                        overflow-y: hidden;
-                        transform: translateY(-52%);
-                        z-index: 1;
-                        .track {
-                            position: absolute; 
-                            white-space: nowrap;
-                            will-change: transform;
-                            animation: marquee 11s linear infinite; 
-                        }
-                    }
-                    @keyframes marquee {
-                        from { transform: translateX(0); }
-                        to { transform: translateX(-50%); }
-                    }
-                    @media (hover: hover) and (min-width: 70rem){
-                        .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                        display: none;
                     }
                     .slidebox {
-                        position: absolute;
-                        top:50%;
-                        left: 50%;
-                        display: flex;
-                        transform: translate(-50%, -50%);
+                        width: 98%;
+                        margin: 0 auto;
+                        padding-top: 10rem;
                         .leftbox {
-                            position: absolute;
-                            left: -21rem;
-                            top: -1.5rem;
-                            width: 40rem;
-                            h4 {font-size: 3rem;}
+                            padding-bottom: 1rem;
+                            h4 {font-size: 2rem;}
                             >ul {
+                                font-size: 1.6rem;
                                 li {
-                                    font-size: 1.6rem;
-                                    span {}
+                                    &:nth-child(1) {display: none;}
+                                    &:nth-child(2) {display: none;}
                                 }
                             }
                         }
                         .centerbox {
-                            width: 110rem;
-                            img {width: 100%;}
+                            position: relative;
+                            min-width: 35rem;
+                            img {
+                                width: 100%;
+                            }
+                            .animated-title_mo {
+                                position: absolute;
+                                top:50%;
+                                left: 0;
+                                width: 100%;
+                                max-width:100%; 
+                                height: auto; 
+                                padding:0 0 11rem 0; 
+                                font-size:3rem;
+                                font-weight:600;
+                                text-transform:uppercase;
+                                overflow-x: hidden; 
+                                overflow-y: hidden;
+                                transform: translateY(-50%);
+                                z-index: 1;
+                                .track {
+                                    position: absolute; 
+                                    white-space: nowrap;
+                                    will-change: transform;
+                                    animation: marquee 11s linear infinite; 
+                                }
+                            }
+                            @keyframes marquee {
+                                from { transform: translateX(0); }
+                                to { transform: translateX(-50%); }
+                            }
+                            @media (hover: hover) and (min-width: 70rem){
+                                .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                            }
                         }
                         .rightbox {
-                            position: absolute;
-                            bottom:-5.5rem;
-                            right: -21rem;
-                            font-size: 1.8rem;
-                            .txt {
-                                display: inline-block;
-                                margin-bottom: 1rem;
-                                border-bottom: 0.1rem solid #fff;
-                            }
-                            .link {
-                                padding-top: 0.1rem;
-                                a {
-                                    display: block;
-                                    color:#fff;
-                                    .right {
-                                        transition: 0.3s;
-                                        &.enter {
-                                            display: inline-block;
-                                            transform: translateX(0.5rem);
-                                            color: #fff;
+                            padding-top: 1rem;
+                            .right_list {
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 1.7rem;
+                                    border-bottom: 0.1rem solid #fff;
+                                }
+                                .flexbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 2rem;
+                                    padding-top: 2rem;
+                                    .link {
+                                        a {
+                                            display: block;
+                                            color:#fff;
+                                            font-size: 1.6rem;
+                                            .right {
+                                                transition: 0.3s;
+                                                &.enter {
+                                                    display: inline-block;
+                                                    transform: translateX(0.5rem);
+                                                    color: #fff;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -286,29 +320,29 @@
                     }
                     .number {
                         position: absolute;
-                        right: 12rem;
+                        right: 5rem;
                         bottom: 1.3rem;
-                        font-size: 3.5rem;
+                        font-size: 2rem;
                     }
                     .prev {
                         position: absolute;
-                        bottom: 2.5rem;
-                        right: 19rem;
-                        width: 2.5rem;
-                        height: 2.5rem;
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff;
+                        bottom: 2.1rem;
+                        right: 9.5rem;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff;
                         transform: rotate(225deg);
                         cursor: pointer;
                     }
                     .next {
                         position: absolute;
-                        bottom:2.5rem;
-                        right: 9rem;
-                        width: 2.5rem;
-                        height: 2.5rem; 
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff; 
+                        bottom:2.1rem;
+                        right: 3rem;
+                        width: 1.3rem;
+                        height: 1.3rem; 
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff; 
                         transform: rotate(45deg);
                         cursor: pointer;
                     }
@@ -317,101 +351,109 @@
                     position: relative;
                     background-color: #5c8b55;
                     .slidebox {
-                        position: absolute;
-                        top:50%;
-                        left: 50%;
-                        display: flex;
-                        transform: translate(-50%, -50%);
+                        width: 98%;
+                        margin: 0 auto;
+                        padding-top: 10rem;
                         .leftbox {
-                            position: absolute;
-                            left: -21rem;
-                            top: 1.5rem;
-                            width: 40rem;
-                            h4 {font-size: 3rem;}
+                            padding-bottom: 3.5rem;
+                            h4 {font-size: 2rem;}
                             >ul {
+                                font-size: 1.6rem;
                                 li {
-                                    font-size: 1.6rem;
-                                    span {}
+                                    &:nth-child(1) {display: none;}
+                                    &:nth-child(2) {display: none;}
                                 }
                             }
                         }
                         .centerbox {
-                            width: 110rem;
-                            img {width: 100%;}
-                        }
-                        .rightbox {
-                            position: absolute;
-                            bottom: -5.5rem;
-                            right: -10rem;
-                            font-size: 1.8rem;
-                            .txt {
-                                display: inline-block;
-                                margin-bottom: 1rem;
-                                border-bottom: 0.1rem solid #fff;
+                            position: relative;
+                            min-width: 10rem;
+                            width: 27rem;
+                            max-width: 50rem;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
                             }
-                            .link {
-                                padding-top: 0.1rem;
-                                a {
-                                    display: block;
-                                    color:#fff;
-                                    .right {
-                                        transition: 0.3s;
-                                        &.enter {
-                                            display: inline-block;
-                                            transform: translateX(0.5rem);
-                                            color: #fff;
+                            .track {
+                                position: absolute;
+                                top:50%;
+                                left:50%;
+                                transform: translate(-50%, -50%);
+                                .content {
+                                    width: 35rem;
+                                    height: 35rem;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        animation: rotate_image 20s linear infinite;
+                                        transform-origin: 50% 50%;
+                                    }
+                                    @keyframes rotate_image{
+                                        100% {
+                                            transform: rotate(360deg);
                                         }
                                     }
                                 }
                             }
                         }
-                        .track {
-                            position: absolute;
-                            top:-6.5rem;
-                            left: 21.5rem;
-                            .content {
-                                width: 70rem;
-                                height: 70rem;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    animation: rotate_image 20s linear infinite;
-                                    transform-origin: 50% 50%;
+                        .rightbox {
+                            padding-top: 2rem;
+                            .right_list {
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 1.7rem;
+                                    border-bottom: 0.1rem solid #fff;
                                 }
-                                @keyframes rotate_image{
-                                    100% {
-                                        transform: rotate(360deg);
+                                .flexbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 2rem;
+                                    padding-top: 1rem;
+                                    .link {
+                                        a {
+                                            display: block;
+                                            color:#fff;
+                                            font-size: 1.6rem;
+                                            .right {
+                                                transition: 0.3s;
+                                                &.enter {
+                                                    display: inline-block;
+                                                    transform: translateX(0.5rem);
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                    *.number {
-                        position: absolute;
-                        right: 12rem;
-                        bottom: 1.3rem;
-                        font-size: 3.5rem;
 
+                    }
+                    .number {
+                        position: absolute;
+                        right: 5rem;
+                        bottom: 1.3rem;
+                        font-size: 2rem;
                     }
                     .prev {
                         position: absolute;
-                        bottom: 2.5rem;
-                        right: 19rem;
-                        width: 2.5rem;
-                        height: 2.5rem;
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff;
+                        bottom: 2.1rem;
+                        right: 9.5rem;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff;
                         transform: rotate(225deg);
                         cursor: pointer;
                     }
                     .next {
                         position: absolute;
-                        bottom:2.5rem;
-                        right: 9rem;
-                        width: 2.5rem;
-                        height: 2.5rem; 
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff; 
+                        bottom:2.1rem;
+                        right: 3rem;
+                        width: 1.3rem;
+                        height: 1.3rem; 
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff; 
                         transform: rotate(45deg);
                         cursor: pointer;
                     }
@@ -420,19 +462,20 @@
                     position: relative;
                     background-color: #373f47;
                     .animated-title {
+                        display: block;
                         position: absolute;
-                        top:52%;
+                        top:50%;
                         left: 0;
                         width: 100%;
                         max-width:100%; 
                         height: auto; 
                         padding:0 0 11rem 0; 
-                        font-size:8rem;
+                        font-size:4rem;
                         font-weight:600;
                         text-transform:uppercase;
                         overflow-x: hidden; 
                         overflow-y: hidden;
-                        transform: translateY(-52%);
+                        transform: translateY(-50%);
                         z-index: 1;
                         .track {
                             position: absolute; 
@@ -449,309 +492,54 @@
                         .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
                     }
                     .slidebox {
-                        position: absolute;
-                        top:50%;
-                        left: 50%;
-                        display: flex;
-                        transform: translate(-50%, -50%);
+                        width: 98%;
+                        margin: 0 auto;
+                        padding-top: 10rem;
                         .leftbox {
-                            position: absolute;
-                            left: -21rem;
-                            top:-1.5rem;
-                            width: 40rem;
-                            h4 {font-size: 3rem;}
+                            padding-bottom: 1rem;
+                            h4 {font-size: 2rem;}
                             >ul {
+                                font-size: 1.6rem;
                                 li {
-                                    font-size: 1.6rem;
-                                    span {}
+                                    &:nth-child(1) {display: none;}
+                                    &:nth-child(2) {display: none;}
                                 }
                             }
                         }
                         .centerbox {
-                            // background-color: #fff;
                             position: relative;
-                            width: 110rem;
-                            height: 100%;
+                            min-width: 35rem;
+                            margin: 0 auto;
                             img {
                                 width: 100%;
                             }
                         }
                         .rightbox {
-                            position: absolute;
-                            bottom:-5.5rem;
-                            right: -10rem;
-                            font-size: 1.8rem;
-                            .txt {
-                                display: inline-block;
-                                margin-bottom: 1rem;
-                                border-bottom: 0.1rem solid #fff;
-                            }
-                            .link {
-                                padding-top: 0.1rem;
-                                a {
-                                    display: block;
-                                    color: #fff;
-                                    .right {
-                                        transition: 0.3s;
-                                        &.enter {
-                                            display: inline-block;
-                                            transform: translateX(0.5rem);
-                                        }
-                                    }
+                            padding-top: 1rem;
+                            .right_list {
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 1.7rem;
+                                    border-bottom: 0.1rem solid #fff;
                                 }
-                            }
-                        }
-                        .track {
-                            position: absolute;
-                            top:-6.5rem;
-                            left: 21.5rem;
-                            .content {
-                                width: 70rem;
-                                height: 70rem;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    animation: rotate_image 20s linear infinite;
-                                    transform-origin: 50% 50%;
-                                }
-                                @keyframes rotate_image{
-                                    100% {
-                                        transform: rotate(360deg);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    *.number {
-                        position: absolute;
-                        right: 12rem;
-                        bottom: 1.3rem;
-                        font-size: 3.5rem;
-
-                    }
-                    .prev {
-                        position: absolute;
-                        bottom: 2.5rem;
-                        right: 19rem;
-                        width: 2.5rem;
-                        height: 2.5rem;
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff;
-                        transform: rotate(225deg);
-                        cursor: pointer;
-                    }
-                    .next {
-                        position: absolute;
-                        bottom:2.5rem;
-                        right: 9rem;
-                        width: 2.5rem;
-                        height: 2.5rem; 
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff; 
-                        transform: rotate(45deg);
-                        cursor: pointer;
-                    }
-                }
-                .portfolio_img4 {
-                    position: relative;
-                    width: 100%;
-                    background-color: #3080ed;
-                    z-index: -2;
-                    &::after {
-                        position: absolute;
-                        top:0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background-color: #000;
-                        opacity: 0.1;
-                        content: '';
-                        z-index: -1;
-                    }
-                    .animated-title {
-                        position: absolute;
-                        top:52%;
-                        left: 0;
-                        width: 100%;
-                        max-width:100%; 
-                        height: auto; 
-                        padding:0 0 11rem 0; 
-                        font-size:8rem;
-                        font-weight:600;
-                        text-transform:uppercase;
-                        overflow-x: hidden; 
-                        overflow-y: hidden;
-                        transform: translateY(-52%);
-                        z-index: -1;
-                        .track {
-                            position: absolute; 
-                            white-space: nowrap;
-                            will-change: transform;
-                            animation: marquee 11s linear infinite; 
-                        }
-                    }
-                    @keyframes marquee {
-                        from { transform: translateX(0); }
-                        to { transform: translateX(-50%); }
-                    }
-                    @media (hover: hover) and (min-width: 70rem){
-                        .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
-                    }
-                    .slidebox {
-                        position: absolute;
-                        top:50%;
-                        left: 50%;
-                        display: flex;
-                        transform: translate(-50%, -50%);
-                        .rightbox {
-                            position: absolute;
-                            bottom:10rem;
-                            right: -15rem;
-                            font-size: 1.8rem;
-                            .txt {
-                                display: inline-block;
-                                margin-bottom: 1rem;
-                                border-bottom: 0.1rem solid #fff;
-                            }
-                            .link {
-                                padding-top: 0.1rem;
-                                a {
-                                    display: block;
-                                    color: #fff;
-                                    .right {
-                                        transition: 0.3s;
-                                        &.enter {
-                                            display: inline-block;
-                                            transform: translateX(0.5rem);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .centerbox {
-                            // background-color: #fff;
-                            position: relative;
-                            width: 110rem;
-                            // height: 52rem;
-                            img {
-                                width: 100%;
-                                // height: 100%;
-                            }
-                        }
-                        .leftbox {
-                            position: absolute;
-                            left: -21rem;
-                            top: 10rem;
-                            width: 40rem;
-                            h4 {font-size: 3rem;}
-                            >ul {
-                                li {
-                                    font-size: 1.6rem;
-                                    span {}
-                                }
-                            }
-                        }
-                        .track {
-                            position: absolute;
-                            top:-6.5rem;
-                            left: 21.5rem;
-                            .content {
-                                width: 70rem;
-                                height: 70rem;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    animation: rotate_image 20s linear infinite;
-                                    transform-origin: 50% 50%;
-                                }
-                                @keyframes rotate_image{
-                                    100% {
-                                        transform: rotate(360deg);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    *.number {
-                        position: absolute;
-                        right: 12rem;
-                        bottom: 1.3rem;
-                        font-size: 3.5rem;
-                        z-index: 1;
-                    }
-                    .prev {
-                        position: absolute;
-                        bottom: 2.5rem;
-                        right: 19rem;
-                        width: 2.5rem;
-                        height: 2.5rem;
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff;
-                        transform: rotate(225deg);
-                        cursor: pointer;
-                        z-index: 1;
-                    }
-                    .next {
-                        position: absolute;
-                        bottom:2.5rem;
-                        right: 9rem;
-                        width: 2.5rem;
-                        height: 2.5rem; 
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff; 
-                        transform: rotate(45deg);
-                        cursor: pointer;
-                        z-index: 1;
-                    }
-                }
-                .portfolio_img5 {
-                    position: relative;
-                    background-color: #060606;
-                    .slidebox {
-                        position: absolute;
-                        top:50%;
-                        left: 50%;
-                        display: flex;
-                        color:#fff;
-                        transform: translate(-50%, -50%);
-                        .leftbox {
-                            position: absolute;
-                            left: -21rem;
-                            top: -1.5rem;
-                            width: 40rem;
-                            h4 {font-size: 3rem;}
-                            >ul {
-                                li {
-                                    font-size: 1.6rem;
-                                    span {}
-                                }
-                            }
-                        }
-                        .centerbox {
-                            width: 110rem;
-                            img {width: 100%;}
-                        }
-                        .rightbox {
-                            position: absolute;
-                            bottom:-2rem;
-                            right: -15rem;
-                            font-size: 1.8rem;
-                            .txt {
-                                display: inline-block;
-                                margin-bottom: 1rem;
-                                border-bottom: 0.1rem solid #fff;
-                            }
-                            .link {
-                                padding-top: 0.1rem;
-                                a {
-                                    display: block;
-                                    color:#fff;
-                                    .right {
-                                        transition: 0.3s;
-                                        &.enter {
-                                            display: inline-block;
-                                            transform: translateX(0.5rem);
-                                            color: #fff;
+                                .flexbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 2rem;
+                                    padding-top: 2rem;
+                                    .link {
+                                        a {
+                                            display: block;
+                                            color:#fff;
+                                            font-size: 1.6rem;
+                                            .right {
+                                                transition: 0.3s;
+                                                &.enter {
+                                                    display: inline-block;
+                                                    transform: translateX(0.5rem);
+                                                    color: #fff;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -760,30 +548,263 @@
                     }
                     .number {
                         position: absolute;
-                        right: 12rem;
+                        right: 5rem;
                         bottom: 1.3rem;
-                        font-size: 3.5rem;
-                        color:#fff;
+                        font-size: 2rem;
                     }
                     .prev {
                         position: absolute;
-                        bottom: 2.5rem;
-                        right: 19rem;
-                        width: 2.5rem;
-                        height: 2.5rem;
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff;
+                        bottom: 2.1rem;
+                        right: 9.5rem;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff;
                         transform: rotate(225deg);
                         cursor: pointer;
                     }
                     .next {
                         position: absolute;
-                        bottom:2.5rem;
-                        right: 9rem;
-                        width: 2.5rem;
-                        height: 2.5rem; 
-                        border-top: 0.3rem solid #fff;
-                        border-right: 0.3rem solid #fff; 
+                        bottom:2.1rem;
+                        right: 3rem;
+                        width: 1.3rem;
+                        height: 1.3rem; 
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff; 
+                        transform: rotate(45deg);
+                        cursor: pointer;
+                    }
+                }
+                .portfolio_img4 {
+                    position: relative;
+                    background-color: #3080ed;
+                    .animated-title {
+                        display: block;
+                        position: absolute;
+                        top:57.5%;
+                        left: 0;
+                        width: 100%;
+                        max-width:100%; 
+                        height: auto; 
+                        padding:0 0 11rem 0; 
+                        font-size:4rem;
+                        font-weight:600;
+                        text-transform:uppercase;
+                        overflow-x: hidden; 
+                        overflow-y: hidden;
+                        transform: translateY(-57.5%);
+                        z-index: -1;
+                        .track {
+                            position: absolute; 
+                            white-space: nowrap;
+                            will-change: transform;
+                            animation: marquee 11s linear infinite; 
+                        }
+                    }
+                    @keyframes marquee {
+                        from { transform: translateX(0); }
+                        to { transform: translateX(-50%); }
+                    }
+                    @media (hover: hover) and (min-width: 70rem){
+                        .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                    }
+                    .slidebox {
+                        width: 98%;
+                        margin: 0 auto;
+                        padding-top: 10rem;
+                        .leftbox {
+                            padding-bottom: 1rem;
+                            h4 {font-size: 2rem;}
+                            >ul {
+                                font-size: 1.6rem;
+                                li {
+                                    &:nth-child(1) {display: none;}
+                                    &:nth-child(2) {display: none;}
+                                }
+                            }
+                        }
+                        .centerbox {
+                            position: relative;
+                            min-width: 35rem;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .rightbox {
+                            padding-top: 1rem;
+                            .right_list {
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 1.7rem;
+                                    border-bottom: 0.1rem solid #fff;
+                                }
+                                .flexbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 2rem;
+                                    padding-top: 2rem;
+                                    .link {
+                                        a {
+                                            display: block;
+                                            color:#fff;
+                                            font-size: 1.6rem;
+                                            .right {
+                                                transition: 0.3s;
+                                                &.enter {
+                                                    display: inline-block;
+                                                    transform: translateX(0.5rem);
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .number {
+                        position: absolute;
+                        right: 5rem;
+                        bottom: 1.3rem;
+                        font-size: 2rem;
+                    }
+                    .prev {
+                        position: absolute;
+                        bottom: 2.1rem;
+                        right: 9.5rem;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff;
+                        transform: rotate(225deg);
+                        cursor: pointer;
+                    }
+                    .next {
+                        position: absolute;
+                        bottom:2.1rem;
+                        right: 3rem;
+                        width: 1.3rem;
+                        height: 1.3rem; 
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff; 
+                        transform: rotate(45deg);
+                        cursor: pointer;
+                    }
+                }
+                .portfolio_img5 {
+                    position: relative;
+                    background-color: #060606;
+                    .animated-title {
+                        display: block;
+                        position: absolute;
+                        top:57.5%;
+                        left: 0;
+                        width: 100%;
+                        max-width:100%; 
+                        height: auto; 
+                        padding:0 0 11rem 0; 
+                        font-size:4rem;
+                        font-weight:600;
+                        text-transform:uppercase;
+                        overflow-x: hidden; 
+                        overflow-y: hidden;
+                        transform: translateY(-57.5%);
+                        z-index: -1;
+                        .track {
+                            position: absolute; 
+                            white-space: nowrap;
+                            will-change: transform;
+                            animation: marquee 11s linear infinite; 
+                        }
+                    }
+                    @keyframes marquee {
+                        from { transform: translateX(0); }
+                        to { transform: translateX(-50%); }
+                    }
+                    @media (hover: hover) and (min-width: 70rem){
+                        .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                    }
+                    .slidebox {
+                        width: 98%;
+                        margin: 0 auto;
+                        padding-top: 10rem;
+                        .leftbox {
+                            padding-bottom: 1rem;
+                            h4 {font-size: 2rem;}
+                            >ul {
+                                font-size: 1.6rem;
+                                li {
+                                    &:nth-child(1) {display: none;}
+                                    &:nth-child(2) {display: none;}
+                                }
+                            }
+                        }
+                        .centerbox {
+                            position: relative;
+                            min-width: 35rem;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .rightbox {
+                            padding-top: 1rem;
+                            .right_list {
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 1.7rem;
+                                    border-bottom: 0.1rem solid #fff;
+                                }
+                                .flexbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 2rem;
+                                    padding-top: 2rem;
+                                    .link {
+                                        a {
+                                            display: block;
+                                            color:#fff;
+                                            font-size: 1.6rem;
+                                            .right {
+                                                transition: 0.3s;
+                                                &.enter {
+                                                    display: inline-block;
+                                                    transform: translateX(0.5rem);
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .number {
+                        position: absolute;
+                        right: 5rem;
+                        bottom: 1.3rem;
+                        font-size: 2rem;
+                    }
+                    .prev {
+                        position: absolute;
+                        bottom: 2.1rem;
+                        right: 9.5rem;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff;
+                        transform: rotate(225deg);
+                        cursor: pointer;
+                    }
+                    .next {
+                        position: absolute;
+                        bottom:2.1rem;
+                        right: 3rem;
+                        width: 1.3rem;
+                        height: 1.3rem; 
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff; 
                         transform: rotate(45deg);
                         cursor: pointer;
                     }
