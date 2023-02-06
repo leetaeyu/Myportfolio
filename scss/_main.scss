@@ -704,6 +704,90 @@
                         z-index: 1;
                     }
                 }
+                .portfolio_img5 {
+                    position: relative;
+                    background-color: #060606;
+                    .slidebox {
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        display: flex;
+                        color:#fff;
+                        transform: translate(-50%, -50%);
+                        .leftbox {
+                            position: absolute;
+                            left: -21rem;
+                            top: -1.5rem;
+                            width: 40rem;
+                            h4 {font-size: 3rem;}
+                            >ul {
+                                li {
+                                    font-size: 1.6rem;
+                                    span {}
+                                }
+                            }
+                        }
+                        .centerbox {
+                            width: 110rem;
+                            img {width: 100%;}
+                        }
+                        .rightbox {
+                            position: absolute;
+                            bottom:-2rem;
+                            right: -15rem;
+                            font-size: 1.8rem;
+                            .txt {
+                                display: inline-block;
+                                margin-bottom: 1rem;
+                                border-bottom: 0.1rem solid #fff;
+                            }
+                            .link {
+                                padding-top: 0.1rem;
+                                a {
+                                    display: block;
+                                    color:#fff;
+                                    .right {
+                                        transition: 0.3s;
+                                        &.enter {
+                                            display: inline-block;
+                                            transform: translateX(0.5rem);
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .number {
+                        position: absolute;
+                        right: 12rem;
+                        bottom: 1.3rem;
+                        font-size: 3.5rem;
+                        color:#fff;
+                    }
+                    .prev {
+                        position: absolute;
+                        bottom: 2.5rem;
+                        right: 19rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        border-top: 0.3rem solid #fff;
+                        border-right: 0.3rem solid #fff;
+                        transform: rotate(225deg);
+                        cursor: pointer;
+                    }
+                    .next {
+                        position: absolute;
+                        bottom:2.5rem;
+                        right: 9rem;
+                        width: 2.5rem;
+                        height: 2.5rem; 
+                        border-top: 0.3rem solid #fff;
+                        border-right: 0.3rem solid #fff; 
+                        transform: rotate(45deg);
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }

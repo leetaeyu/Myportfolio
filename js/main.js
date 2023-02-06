@@ -27,7 +27,7 @@ $(function(){
     });
 
     var skillsSwiper = new Swiper(".skills_swiper", {
-        slidesPerView: 5,
+        slidesPerView: 6,
         speed:800,
         // centeredSlides: true,
         infinite:true,
