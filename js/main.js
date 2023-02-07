@@ -46,7 +46,7 @@ $(function(){
         infinite:true,
         loop:true,
         loopAdditionalSlides: 1,
-        allowTouchMove: false,
+        allowTouchMove: true,
         autoplay: {
             delay: 7000,
             disableOnInteraction: true,
@@ -54,6 +54,11 @@ $(function(){
         navigation: {
             nextEl: ".next",
             prevEl: ".prev",
+        },
+        breakpoints: {
+            1024: {
+                allowTouchMove: false,
+            } 
         },
     });
 
