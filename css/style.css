@@ -1560,6 +1560,9 @@ body.hidden {
   }
 }
 @media screen and (min-width: 1024px) {
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .animated-title {
+    font-size: 6rem;
+  }
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox {
     position: relative;
     display: -webkit-box;
@@ -1631,6 +1634,7 @@ body.hidden {
 }
 @media screen and (min-width: 1024px) {
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .animated-title {
+    font-size: 6rem;
     top: 55%;
     -webkit-transform: translateY(-55%);
             transform: translateY(-55%);
@@ -1783,6 +1787,9 @@ body.hidden {
 /* 작은 PC 1024px~1279px */
 /* PC 1280px~ */
 @media screen and (min-width: 1280px) {
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .animated-title {
+    font-size: 8rem;
+  }
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox {
     position: relative;
     display: -webkit-box;
@@ -1797,6 +1804,9 @@ body.hidden {
   }
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox .rightbox .right_list {
     bottom: -2rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .animated-title {
+    font-size: 8rem;
   }
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .slidebox .rightbox .right_list {
     bottom: -8rem;
