@@ -615,15 +615,16 @@ body.hidden {
   color: #fff;
   font-size: 1.6rem;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img1 .slidebox .rightbox .right_list .flexbox .link a .right {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img1 .slidebox .rightbox .right_list .flexbox .link:hover a {
+  display: block;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img1 .slidebox .rightbox .right_list .flexbox .link a .right.enter {
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img1 .slidebox .rightbox .right_list .flexbox .link:hover a .right {
   display: inline-block;
+  color: #fff;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
-  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img1 .number {
   position: absolute;
@@ -744,15 +745,16 @@ body.hidden {
   color: #fff;
   font-size: 1.6rem;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img2 .slidebox .rightbox .right_list .flexbox .link a .right {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img2 .slidebox .rightbox .right_list .flexbox .link:hover a {
+  display: block;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img2 .slidebox .rightbox .right_list .flexbox .link a .right.enter {
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img2 .slidebox .rightbox .right_list .flexbox .link:hover a .right {
   display: inline-block;
+  color: #fff;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
-  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img2 .number {
   position: absolute;
@@ -881,15 +883,16 @@ body.hidden {
   color: #fff;
   font-size: 1.6rem;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox .rightbox .right_list .flexbox .link a .right {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox .rightbox .right_list .flexbox .link:hover a {
+  display: block;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox .rightbox .right_list .flexbox .link a .right.enter {
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .slidebox .rightbox .right_list .flexbox .link:hover a .right {
   display: inline-block;
+  color: #fff;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
-  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img3 .number {
   position: absolute;
@@ -1018,15 +1021,16 @@ body.hidden {
   color: #fff;
   font-size: 1.6rem;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .slidebox .rightbox .right_list .flexbox .link a .right {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .slidebox .rightbox .right_list .flexbox .link:hover a {
+  display: block;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .slidebox .rightbox .right_list .flexbox .link a .right.enter {
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .slidebox .rightbox .right_list .flexbox .link:hover a .right {
   display: inline-block;
+  color: #fff;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
-  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .number {
   position: absolute;
@@ -1155,15 +1159,16 @@ body.hidden {
   color: #fff;
   font-size: 1.6rem;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img5 .slidebox .rightbox .right_list .flexbox .link a .right {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img5 .slidebox .rightbox .right_list .flexbox .link:hover a {
+  display: block;
 }
-#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img5 .slidebox .rightbox .right_list .flexbox .link a .right.enter {
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img5 .slidebox .rightbox .right_list .flexbox .link:hover a .right {
   display: inline-block;
+  color: #fff;
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
-  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img5 .number {
   position: absolute;
