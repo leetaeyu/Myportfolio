@@ -15,6 +15,9 @@
                     }
                     .visionflexbox {
                         justify-content: inherit;
+                        .vision {
+                            font-size: 1.4rem;
+                        }
                         .imgbox {
                             right: -1rem;
                             width: 5rem;
@@ -41,17 +44,9 @@
                     }
                 }
                 .skills_box {
+                    max-width: 70rem;
                     h3 {
                         font-size: 2rem;
-                    }
-                    .skills_swiper {
-                    }
-                    .mo_skill {
-                        display: flex;
-                        gap:2rem;
-                        .mo_skillbox2 {
-                            padding-top: 3rem;
-                        }
                     }
                 }
             }
@@ -59,6 +54,12 @@
         .portfolio_container {
             .portfolio_swiper {
                 .portfolio_box{
+                    .portfolio_img1 {
+                        .animated-title {
+                            font-size: 4rem;
+                            top:35rem;
+                        }
+                    }
                     .portfolio_img2 {
                         .slidebox {
                             .leftbox {
@@ -73,15 +74,18 @@
                                     }
                                 }
                             }
-                            .rightbox {
-                                padding-top: 5rem;
-                                .right_list {
-                                    .flexbox {
-                                        padding-top: 2rem;
-                                    }
-                                }
-                            }
-    
+                        }
+                    }
+                    .portfolio_img3 {
+                        .animated-title {
+                            font-size: 5rem;
+                            top:44rem;
+                        }
+                    }
+                    .portfolio_img4 {
+                        .animated-title {
+                            font-size: 5rem;
+                            top:37rem;
                         }
                     }
                 }
@@ -104,6 +108,64 @@
             }
         }
     }
+    #pf_main_container {
+        .home_container {
+            .home_wrap {
+
+                .visionbox {
+                    display: block;
+                    padding-top: 5rem;
+                    h3 {
+                        position: relative;
+                        top:2rem;
+                        font-size: 3rem;
+                    }
+                    .visionflexbox {
+                        .vision {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                .skills_box {
+                    max-width: 100rem;
+                }
+
+
+            }
+        }
+        .portfolio_container {
+            .portfolio_swiper {
+                .portfolio_box{
+                    .portfolio_img1 {
+                        .animated-title {
+                            font-size: 6rem;
+                            top:40rem;
+                        }
+                    }
+                    .portfolio_img3 {
+                        .animated-title {
+                            font-size:6.5rem;
+                        }
+                    }
+                    .portfolio_img4 {
+                        .animated-title {
+                            font-size: 7rem;
+                            top:52rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 작은 PC 1024px~1279px */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+/* PC 1280px~ */
+@media screen and (min-width: 1280px) {
     #pf_main_container {
         .home_container {
             .home_wrap {
@@ -154,23 +216,20 @@
                     }
                 }
                 .skills_box {
+                    max-width: inherit;
                     padding-top: 1.5rem;
                     h3 {
                         font-size: 2.5rem;
                     }
                     .skills_swiper {
-                        display: block;
                         padding-top: 5rem;
                         .skill_box {
                             .skill_img {
-                                width: 15rem;
-                                height: 15rem;
-                                img {width: 100%; height: 100%;}
+                                width: 10rem;
+                                // height: 15rem;
+                                img {width: 100%;}
                             }
                         }
-                    }
-                    .mo_skill {
-                        display: none;
                     }
                 }
             }
@@ -183,34 +242,7 @@
                 .portfolio_box{
                     .portfolio_img1 {
                         .animated-title {
-                            display: block;
-                            position: absolute;
-                            top:50%;
-                            left: 0;
-                            width: 100%;
-                            max-width:100%; 
-                            height: auto; 
-                            padding:0 0 11rem 0; 
-                            font-size:8rem;
-                            font-weight:600;
-                            text-transform:uppercase;
-                            overflow-x: hidden; 
-                            overflow-y: hidden;
-                            transform: translateY(-50%);
-                            z-index: 1;
-                            .track {
-                                position: absolute; 
-                                white-space: nowrap;
-                                will-change: transform;
-                                animation: marquee 11s linear infinite; 
-                            }
-                        }
-                        @keyframes marquee {
-                            from { transform: translateX(0); }
-                            to { transform: translateX(-50%); }
-                        }
-                        @media (hover: hover) and (min-width: 70rem){
-                            .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                            display: none;
                         }
                         .slidebox {
                             position: relative;
@@ -228,6 +260,7 @@
                                     li {
                                         &:nth-child(1) {display: block;}
                                         &:nth-child(2) {display: block;}
+                                        &:nth-child(3) {display: block;}
                                     }
                                 }
                             }
@@ -235,9 +268,6 @@
                                 width: 60%;
                                 max-width: 60%;
                                 margin: 0 auto;
-                                .animated-title_mo {
-                                    display: none;
-                                }
                             }
                             .rightbox {
                                 position: relative;
@@ -245,41 +275,16 @@
                                 padding-top: inherit;
                                 .right_list {
                                     position: absolute;
-                                    bottom: -9rem;
-                                    .flexbox {
-                                        display: inherit;
-                                        flex-wrap: inherit;
-                                        column-gap: inherit;
+                                    right: 0;
+                                    bottom: -7rem;
+                                    .linkbox {
+                                        padding-top: 3rem;
                                         .link {
-                                            a {
-                                                font-size: 1.7rem;
-                                            }
+                                            width: 40%;
                                         }
                                     }
                                 }
                             }
-                        }
-                        .number {
-                            right: 7rem;
-                            bottom: 1.3rem;
-                            font-size: 3rem;
-                        }
-                        .prev {
-                            bottom: 2.2rem;
-                            right: 12.7rem;
-                            width: 2.3rem;
-                            height: 2.3rem;
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff;
-
-                        }
-                        .next {
-                            bottom:2.2rem;
-                            right: 4.5rem;
-                            width: 2.3rem;
-                            height: 2.3rem; 
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff; 
                         }
                     }
                     .portfolio_img2 {
@@ -317,48 +322,41 @@
                                 padding-top: inherit;
                                 .right_list {
                                     position: absolute;
-                                    bottom: -9rem;
-                                    .txt {
-                                    }
-                                    .flexbox {
-                                        display: inherit;
-                                        flex-wrap: inherit;
-                                        column-gap: inherit;
+                                    right: 0;
+                                    bottom: -7rem;
+                                    width: 37.5rem;
+                                    .linkbox {
+                                        padding-top: 3rem;
                                         .link {
-                                            a {
-                                                font-size: 1.7rem;
-                                            }
+                                            width: 40%;
+                                            padding: 0.5rem 0;
                                         }
                                     }
                                 }
                             }
                         }
-                        .number {
-                            position: absolute;
-                            right: 7rem;
-                            bottom: 1.3rem;
-                            font-size: 3rem;
-                        }
-                        .prev {
-                            bottom: 2.2rem;
-                            right: 13rem;
-                            width: 2.3rem;
-                            height: 2.3rem;
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff;
-                        }
-                        .next {
-                            bottom:2.2rem;
-                            right: 4.5rem;
-                            width: 2.3rem;
-                            height: 2.3rem; 
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff;
-                        }
                     }
                     .portfolio_img3 {
                         .animated-title {
-                            font-size:6rem;
+                            top:38rem;
+                            font-size:7rem;
+                        }
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            width: 98%;
+                            margin: 0 auto;
+                            padding-top: 20rem;
+                            .leftbox {
+                                >ul {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                            .rightbox {
+                                .right_list {
+                                    bottom: -2rem;
+                                }
+                            }
                         }
                         .slidebox {
                             position: relative;
@@ -388,47 +386,23 @@
                                 padding-top: inherit;
                                 .right_list {
                                     position: absolute;
-                                    bottom: -20rem;
-                                    .flexbox {
-                                        display: inherit;
-                                        flex-wrap: inherit;
-                                        column-gap: inherit;
+                                    right: 0;
+                                    bottom: -7rem;
+                                    width: 37.5rem;
+                                    .linkbox {
+                                        padding-top: 3rem;
                                         .link {
-                                            a {
-                                                font-size: 1.7rem;
-                                            }
+                                            width: 40%;
                                         }
                                     }
                                 }
                             }
-                        }
-                        .number {
-                            right: 7rem;
-                            bottom: 1.3rem;
-                            font-size: 3rem;
-                        }
-                        .prev {
-                            bottom: 2.2rem;
-                            right: 13rem;
-                            width: 2.3rem;
-                            height: 2.3rem;
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff;
-                        }
-                        .next {
-                            bottom:2.2rem;
-                            right: 4.5rem;
-                            width: 2.3rem;
-                            height: 2.3rem; 
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff; 
                         }
                     }
                     .portfolio_img4 {
                         .animated-title {
                             font-size: 6rem;
-                            top:55%;
-                            transform: translateY(-55%);
+                            top:39rem;
                         }
                         .slidebox {
                             position: relative;
@@ -458,47 +432,20 @@
                                 padding-top: inherit;
                                 .right_list {
                                     position: absolute;
-                                    bottom: -20rem;
-                                    .flexbox {
-                                        display: inherit;
-                                        flex-wrap: inherit;
-                                        column-gap: inherit;
+                                    right: 0;
+                                    bottom: -7rem;
+                                    width: 37.5rem;
+                                    .linkbox {
+                                        padding-top: 3rem;
                                         .link {
-                                            a {
-                                                font-size: 1.7rem;
-                                            }
+                                            width: 40%;
                                         }
                                     }
                                 }
                             }
                         }
-                        .number {
-                            right: 7rem;
-                            bottom: 1.3rem;
-                            font-size: 3rem;
-                        }
-                        .prev {
-                            bottom: 2.2rem;
-                            right: 13rem;
-                            width: 2.3rem;
-                            height: 2.3rem;
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff;
-                        }
-                        .next {
-                            bottom:2.2rem;
-                            right: 4.5rem;
-                            width: 2.3rem;
-                            height: 2.3rem; 
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff; 
-                        }
                     }
                     .portfolio_img5 {
-                        .animated-title {
-                            top:55%;
-                            transform: translateY(-55%);
-                        }
                         .slidebox {
                             position: relative;
                             display: flex;
@@ -528,102 +475,90 @@
                                 padding-top: inherit;
                                 .right_list {
                                     position: absolute;
-                                    bottom: -20rem;
-                                    .flexbox {
-                                        display: inherit;
-                                        flex-wrap: inherit;
-                                        column-gap: inherit;
+                                    right: 0;
+                                    bottom: -7rem;
+                                    width: 37.5rem;
+                                    .linkbox {
+                                        padding-top: 3rem;
                                         .link {
-                                            a {
-                                                font-size: 1.7rem;
-                                            }
+                                            width: 40%;
                                         }
                                     }
                                 }
                             }
                         }
-                        .number {
-                            right: 7rem;
-                            bottom: 1.3rem;
-                            font-size: 3rem;
+                    }
+                }
+                .btn_pg {
+                    position: absolute;
+                    top:23.5rem;
+                    right: 16%;
+                    width: 5rem;
+                    height: 2rem;
+                    z-index: 9999;
+                    .swiper-pagination {
+                        width: 6.5rem;
+                        font-size: 3rem;
+                        .swiper-pagination-current {
+                            position: relative;
+                            top:-1rem;
+                            left: 0.2rem;
                         }
-                        .prev {
-                            bottom: 2.2rem;
-                            right: 13rem;
-                            width: 2.3rem;
-                            height: 2.3rem;
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff;
+                        .swiper-pagination-total {
+                            position: relative;
+                            top:1rem;
+                            right: 0.2rem;
                         }
-                        .next {
-                            bottom:2.2rem;
-                            right: 4.5rem;
-                            width: 2.3rem;
-                            height: 2.3rem; 
-                            border-top: 0.3rem solid #fff;
-                            border-right: 0.3rem solid #fff; 
-                        }
+                    }
+                    .prev {
+                        position: absolute;
+                        top:-2.5rem;
+                        left: -2rem;
+                        width: 2rem;
+                        height: 2rem;
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff;
+                        transform: rotate(225deg);
+                        cursor: pointer;
+                    }
+                    .next {
+                        position: absolute;
+                        top:-2.5rem;
+                        right:-3.5rem;
+                        width: 2rem;
+                        height: 2rem; 
+                        border-top: 0.2rem solid #fff;
+                        border-right: 0.2rem solid #fff; 
+                        transform: rotate(45deg);
+                        cursor: pointer;
                     }
                 }
             }
         }
     }
 }
-
-/* 작은 PC 1024px~1279px */
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-
-}
-
-/* PC 1280px~ */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1750px) {
     #pf_main_container {
         .portfolio_container {
             .portfolio_swiper {
                 .portfolio_box{
+                    .portfolio_img1 {
+                        .animated-title {
+                            display: block;
+                            font-size: 8rem;
+                            top:40rem;
+                        }
+                    }
                     .portfolio_img3 {
                         .animated-title {
-                            font-size:8rem;
-                        }
-                        .slidebox {
-                            position: relative;
-                            display: flex;
-                            width: 98%;
-                            margin: 0 auto;
-                            padding-top: 20rem;
-                            .leftbox {
-                                >ul {
-                                    font-size: 1.6rem;
-                                }
-                            }
-                            .rightbox {
-                                .right_list {
-                                    bottom: -2rem;
-                                }
-                            }
+                            font-size: 8rem;
+                            top:50rem;
                         }
                     }
                     .portfolio_img4 {
                         .animated-title {
-                            font-size:8rem;
-                        }
-                        .slidebox {
-                            .rightbox {
-                                .right_list {
-                                    bottom: -8rem;
-                                }
-                            }
-                        }
-                    }
-                    .portfolio_img5 {
-                        .slidebox {
-
-                            .rightbox {
-
-                                .right_list {
-                                    bottom: 0rem;
-                                }
-                            }
+                            font-size: 7rem;
+                            top:50rem;
                         }
                     }
                 }
