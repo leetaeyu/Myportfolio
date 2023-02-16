@@ -15,7 +15,6 @@ $(function(){
         $('body').off('scroll touchmove mousewheel');
     })
 
-
     setTimeout(function(){
         $(".wrap").addClass("in");
     },400)
