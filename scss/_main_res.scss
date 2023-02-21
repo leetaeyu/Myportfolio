@@ -153,6 +153,12 @@
                             top:52rem;
                         }
                     }
+                    .portfolio_img6 {
+                        .animated-title {
+                            font-size: 6rem;
+                            top:40rem;
+                        }
+                    }
                 }
             }
         }
@@ -485,6 +491,51 @@
                             }
                         }
                     }
+                    .portfolio_img6 {
+                        .slidebox {
+                            position: relative;
+                            display: flex;
+                            padding-top: 20rem;
+                            .leftbox {
+                                position: relative;
+                                top:-5rem;
+                                width: 19%;
+                                padding-bottom: inherit;
+                                z-index: 1;
+                                h4 {font-size: 3rem;}
+                                >ul {
+                                    font-size: 1.6rem;
+                                    li {
+                                        &:nth-child(1) {display: block;}
+                                        &:nth-child(2) {display: block;}
+                                        &:nth-child(3) {display: block;}
+                                    }
+                                }
+                            }
+                            .centerbox {
+                                width: 60%;
+                                max-width: 90%;
+                                margin: 0 auto;
+                            }
+                            .rightbox {
+                                position: relative;
+                                width: 19%;
+                                padding-top: inherit;
+                                .right_list {
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: 0rem;
+                                    width: 37.5rem;
+                                    .linkbox {
+                                        padding-top: 3rem;
+                                        .link {
+                                            width: 40%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .btn_pg {
                     position: absolute;
@@ -556,6 +607,13 @@
                         .animated-title {
                             font-size: 7rem;
                             top:50rem;
+                        }
+                    }
+                    .portfolio_img6 {
+                        .animated-title {
+                            display: block;
+                            font-size: 8rem;
+                            top:40rem;
                         }
                     }
                 }

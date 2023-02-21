@@ -826,6 +826,134 @@
                         }
                     }
                 }
+                .portfolio_img6 {
+                    position: relative;
+                    background-color: #0f171d;
+                    .animated-title {
+                        display: block;
+                        position: absolute;
+                        top:25rem;
+                        left: 0;
+                        width: 100%;
+                        max-width:100%; 
+                        height: auto; 
+                        padding:0 0 11rem 0; 
+                        font-size:3rem;
+                        font-weight:600;
+                        text-transform:uppercase;
+                        overflow-x: hidden; 
+                        overflow-y: hidden;
+                        z-index: 1;
+                        .track {
+                            position: absolute; 
+                            white-space: nowrap;
+                            will-change: transform;
+                            animation: marquee 15s linear infinite; 
+                        }
+                    }
+                    @keyframes marquee {
+                        from { transform: translateX(0); }
+                        to { transform: translateX(-50%); }
+                    }
+                    @media (hover: hover) and (min-width: 70rem){
+                        .animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 12rem));}
+                    }
+                    .slidebox {
+                        width: 98%;
+                        margin: 0 auto;
+                        padding-top: 7rem;
+                        .leftbox {
+                            padding-bottom: 1rem;
+                            h4 {font-size: 2rem;}
+                            >ul {
+                                font-size: 1.6rem;
+                                li {
+                                    &:nth-child(1) {display: none;}
+                                    &:nth-child(2) {display: none;}
+                                    &:nth-child(3) {display: none;}
+                                }
+                            }
+                        }
+                        .centerbox {
+                            position: relative;
+                            min-width: 35rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .rightbox {
+                            padding-top: 1rem;
+                            .right_list {
+                                .txt {
+                                    display: inline-block;
+                                    font-size: 1.9rem;
+                                    border-bottom: 0.1rem solid #fff;
+                                }
+                                .flexbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 1rem;
+                                    padding-top: 2rem;
+                                    .link {
+                                        padding: 0.5rem 0;
+                                        a {
+                                            display: block;
+                                            padding: 1rem 1rem;
+                                            color:#fff;
+                                            font-size: 1.7rem;
+                                            border: 0.1rem solid #fff;
+                                            border-radius: 0.5rem;
+                                            text-align: center;
+                                            &:hover {
+                                                color: #000;
+                                            }
+                                        } 
+                                        .blinking {
+                                            -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+                                            -moz-animation:blink 1.5s ease-in-out infinite alternate;
+                                            animation:blink 1.5s ease-in-out infinite alternate;
+                                        }
+                                        @-webkit-keyframes blink{
+                                            0% {color:#fff;}
+                                            100% {color:#000;}
+                                          }
+                                          @-moz-keyframes blink{
+                                            0% {color:#fff;}
+                                            100% {color:#000;}
+                                          }
+                                          @keyframes blink{
+                                            0% {color:#fff;}
+                                            100% {color:#000;}
+                                        }
+                                    }
+                                }
+                                .linkbox {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    column-gap: 1rem;
+                                    padding-top: 1rem;
+                                    .link {
+                                        padding: 0.5rem 0;
+                                        a {
+                                            display: block;
+                                            padding: 1rem 1rem;
+                                            color:#fff;
+                                            font-size: 1.7rem;
+                                            border: 0.1rem solid #fff;
+                                            border-radius: 0.5rem;
+                                            text-align: center;
+                                            &:hover {
+                                                color: #000;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
             }
             .btn_pg {
                 position: absolute;

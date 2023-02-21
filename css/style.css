@@ -1218,6 +1218,159 @@ body.hidden {
     color: #5d96be;
   }
 }
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 {
+  position: relative;
+  background-color: #0f171d;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .animated-title {
+  display: block;
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0 0 11rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .animated-title .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  -webkit-animation: marquee 15s linear infinite;
+          animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 70rem) {
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 12rem));
+  }
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox {
+  width: 98%;
+  margin: 0 auto;
+  padding-top: 7rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox {
+  padding-bottom: 1rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox h4 {
+  font-size: 2rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul {
+  font-size: 1.6rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul li:nth-child(1) {
+  display: none;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul li:nth-child(2) {
+  display: none;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul li:nth-child(3) {
+  display: none;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .centerbox {
+  position: relative;
+  min-width: 35rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .centerbox img {
+  width: 100%;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox {
+  padding-top: 1rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .txt {
+  display: inline-block;
+  font-size: 1.9rem;
+  border-bottom: 0.1rem solid #fff;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  padding-top: 2rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .flexbox .link {
+  padding: 0.5rem 0;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .flexbox .link a {
+  display: block;
+  padding: 1rem 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .flexbox .link a:hover {
+  color: #000;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .flexbox .link .blinking {
+  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+  animation: blink 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+@keyframes blink {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .linkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  padding-top: 1rem;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .linkbox .link {
+  padding: 0.5rem 0;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .linkbox .link a {
+  display: block;
+  padding: 1rem 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .linkbox .link a:hover {
+  color: #000;
+}
 #pf_main_container .portfolio_container .portfolio_swiper .btn_pg {
   position: absolute;
   bottom: 2rem;
@@ -1367,6 +1520,10 @@ body.hidden {
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .animated-title {
     font-size: 7rem;
     top: 52rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .animated-title {
+    font-size: 6rem;
+    top: 40rem;
   }
 }
 /* 작은 PC 1024px~1279px */
@@ -1701,6 +1858,57 @@ body.hidden {
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img5 .slidebox .rightbox .right_list .linkbox .link {
     width: 40%;
   }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox {
+    position: relative;
+    top: -5rem;
+    width: 19%;
+    padding-bottom: inherit;
+    z-index: 1;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox h4 {
+    font-size: 3rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul {
+    font-size: 1.6rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul li:nth-child(1) {
+    display: block;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul li:nth-child(2) {
+    display: block;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .leftbox > ul li:nth-child(3) {
+    display: block;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .centerbox {
+    width: 60%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox {
+    position: relative;
+    width: 19%;
+    padding-top: inherit;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list {
+    position: absolute;
+    right: 0;
+    bottom: 0rem;
+    width: 37.5rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .linkbox {
+    padding-top: 3rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .slidebox .rightbox .right_list .linkbox .link {
+    width: 40%;
+  }
   #pf_main_container .portfolio_container .portfolio_swiper .btn_pg {
     position: absolute;
     top: 23.5rem;
@@ -1761,5 +1969,10 @@ body.hidden {
   #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img4 .animated-title {
     font-size: 7rem;
     top: 50rem;
+  }
+  #pf_main_container .portfolio_container .portfolio_swiper .portfolio_box .portfolio_img6 .animated-title {
+    display: block;
+    font-size: 8rem;
+    top: 40rem;
   }
 }
